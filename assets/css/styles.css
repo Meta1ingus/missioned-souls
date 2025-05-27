@@ -31,5 +31,16 @@
 
 body {
     font-family: var(--primary-font);
-    padding-top: 72px; /* 57.15px is the height of the navbar */
+    padding-top: 64px; /* 64px is the height of the navbar */
+}
+
+h1 {
+    font-family: var(--secondary-font);
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    text-align: center;
+}
+
+.navbar {
+    padding-top: 0px;
 }
