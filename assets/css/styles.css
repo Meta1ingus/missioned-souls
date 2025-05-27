@@ -31,5 +31,5 @@
 
 body {
     font-family: var(--primary-font);
-    padding-top: 64px; /* 57.15px is the height of the navbar */
+    padding-top: 72px; /* 57.15px is the height of the navbar */
 }
