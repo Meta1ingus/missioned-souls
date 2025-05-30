@@ -39,9 +39,16 @@ h1 {
     padding-bottom: 0px;
 }
 
+.content-section-inner {
+    max-width: 50%; /* This constrains the inner div to half the width of its parent (.col-12) */
+    margin-left: auto; /* Centers the div horizontally */
+    margin-right: auto; /* Centers the div horizontally */
+    padding: 0 15px; /* Optional: Add some horizontal padding inside, especially for smaller screens */
+}
+
 /* grid visualisation CSS for testing */
 
-.container,
+/* .container,
 .row {
     border: 2px solid black;
 }
