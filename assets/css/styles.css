@@ -7,12 +7,12 @@
     --secondary-font: "Jacques Francois Shadow", sans-serif;
     --primary-color: #26525e;
     /* Blue Dianne */
-    --secondary-color: #81a5ab;
-    /* Gumbo */
-    --highlight-color: #59a0a6;
-    /* Beaker Bay */
-    --secondary-highlight-color: #97aab1;
-    /* Gull Grey */
+    --secondary-color: #eef1f1;
+    /* Light Greyish Cyan */
+    --highlight-color: #a1c9ce;
+    /* Light Blue Dianne */
+    --secondary-highlight-color: #18343e;
+    /* Dark Blue Dianne */
 }
 
 /* Global Styles */
@@ -20,6 +20,7 @@
 body {
     font-family: var(--primary-font);
     padding-top: 89px; /* 89px is the height of the navbar */
+    background-image: url('../images/Missioned\ Souls4.jpg');
 }
 
 h1 {
@@ -36,7 +37,7 @@ h1 {
 
 /* grid visualisation CSS for testing */
 
-.container,
+/* .container,
 .row {
     border: 2px solid black;
 }
@@ -44,4 +45,4 @@ h1 {
 .col-12 {
     border: 2px solid white;
     background-color: lightgray;
-}
+} */
