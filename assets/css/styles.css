@@ -21,6 +21,10 @@ body {
     font-family: var(--primary-font);
     padding-top: 89px; /* 89px is the height of the navbar */
     background-image: url('../images/Missioned\ Souls4.jpg');
+    background-size: auto; /* Retains original image size */
+    background-repeat: no-repeat; /* Only one instance of the image */
+    background-position: center center; /* Centres the image */
+    background-attachment: fixed; /* Makes the background static */
 }
 
 h1 {
@@ -37,7 +41,7 @@ h1 {
 
 /* grid visualisation CSS for testing */
 
-/* .container,
+.container,
 .row {
     border: 2px solid black;
 }
@@ -45,4 +49,4 @@ h1 {
 .col-12 {
     border: 2px solid white;
     background-color: lightgray;
-} */
+}
