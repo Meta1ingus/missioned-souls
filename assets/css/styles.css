@@ -42,6 +42,9 @@ h1 {
     width: 100%;
     height: 89px; /* Fixed height for the navbar */
     background-image: url('../images/Missioned_Souls_Banner.jpg');
+    background-size: 100% auto; /* Ensures the image retains original size */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-position: center; /* Centers the image in the navbar */;
     z-index: 1000; /* Ensures the navbar is above other content */
 }
 
@@ -57,6 +60,15 @@ h1 {
     font-family: var(--primary-font);
 }
 
+.nav-link.active {
+    color: var(--secondary-color) !important; /* Ensures the active link color is applied */
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    color: white; /* Or another color for hover/focus */
+    text-decoration: none;
+}
 
 .content-section-inner {
     max-width: 50%; /* This constrains the inner div to half the width of its parent (.col-12) */
