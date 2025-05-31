@@ -45,18 +45,28 @@ h1 {
     z-index: 1000; /* Ensures the navbar is above other content */
 }
 
+.nav-link {
+    color: var(--highlight-color);
+    font-family: var(--primary-font);
+}
+
+
 .content-section-inner {
     max-width: 50%; /* This constrains the inner div to half the width of its parent (.col-12) */
     margin-left: auto; /* Centers the div horizontally */
     margin-right: auto; /* Centers the div horizontally */
     padding: 20px; /* Adds padding inside the div */
-    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white background */
     border-radius: 8px; /* Rounded corners for the div */
 }
 
 .content-section-inner h1,
 .content-section-inner p {
     text-align: center; /* Centers the text inside the div */
+}
+
+.content-section-inner p:nth-of-type(1) {
+    font-family: var(--primary-font);
 }
 
 /* grid visualisation CSS for testing */
