@@ -45,6 +45,13 @@ h1 {
     z-index: 1000; /* Ensures the navbar is above other content */
 }
 
+.logo {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
 .nav-link {
     color: var(--highlight-color);
     font-family: var(--primary-font);
