@@ -23,7 +23,7 @@ body {
     background-image: url('../images/Missioned_Souls4.jpg');
     background-size: contain; /* Scales the image to fit the container */
     background-repeat: no-repeat; /* Only one instance of the image */
-    background-position: center 89px; /* Centers the image horizontally and positions it below the navbar */
+    background-position: center center; /* Centers the image horizontally and positions it below the navbar */
     background-attachment: fixed; /* Makes the background static */
     background-color: var(--secondary-color); /* Fallback color */
 }
