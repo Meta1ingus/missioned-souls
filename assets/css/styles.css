@@ -60,6 +60,67 @@ h1 {
     /* Ensures the navbar is above other content */
 }
 
+/* --- Navbar Collapsed (Mobile) Styles --- */
+
+/* Styles for the expanded menu on small screens */
+@media (max-width: 991.98px) {
+    /* This media query targets screens smaller than Bootstrap's 'lg' breakpoint (992px) */
+
+    .navbar-collapse.show {
+        /* This ensures the *container* of the collapsed menu takes full width,
+           but we won't put the background here. */
+        position: absolute;
+        top: 89px; /* Position it directly below the navbar's height */
+        left: 0;
+        right: 0;
+        /* No background here */
+        padding-bottom: 1rem; /* Some padding at the bottom of the whole expanded area */
+    }
+
+    .navbar-nav {
+        /* ... (Keep existing flexbox and background styles for the .navbar-nav block) ... */
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end; /* This keeps the entire block of links aligned to the right */
+        margin-left: auto !important;
+        background-color: rgba(24, 52, 62, 0.90); /* Semi-transparent dark background */
+        padding: 1rem; /* Padding around the entire block of links */
+        width: fit-content;
+        min-width: 150px;
+        border-radius: 0.5rem;
+    }
+
+    .navbar-nav .nav-item {
+        width: 100%;
+        /* REMOVE text-align: center; from here. We'll put it on the link directly. */
+    }
+
+    .navbar-nav .nav-link {
+        display: flex; /* Make the anchor tag a flex container */
+        justify-content: center; /* Center content horizontally within the flex container */
+        align-items: center; /* Center content vertically (useful if links have variable heights) */
+
+        width: 100%; /* Ensure the anchor tag fills its parent .nav-item's width */
+
+        /* Symmetrical padding for spacing around the centered text */
+        padding: 0.5rem 1rem;
+        /* You can adjust 1rem for more or less horizontal spacing if needed */
+
+        /* Remove text-align: center; as flexbox handles centering now */
+    }
+
+    /* Adjust navbar brand/logo on mobile - Keep this for good mobile padding */
+    .navbar-brand {
+        padding-left: 1rem !important;
+    }
+
+    /* Ensure toggler is on the right - Keep this to push the toggler right */
+    .navbar-toggler {
+        margin-left: auto;
+        margin-right: 1rem;
+    }
+}
+
 .logo {
     width: 75px;
     height: 75px;
@@ -85,8 +146,8 @@ h1 {
 }
 
 .content-section-inner {
-    max-width: 50%;
-    /* This constrains the inner div to half the width of its parent (.col-12) */
+    max-width: 75%;
+    /* Sets a maximum width for the div */
     margin-left: auto;
     /* Centers the div horizontally */
     margin-right: auto;
