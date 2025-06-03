@@ -19,18 +19,12 @@
 body {
     font-family: var(--primary-font);
     padding-top: 89px;
-    /* 89px is the height of the navbar */
     background-image: url('../images/Missioned_Souls4.jpg');
-    background-size: contain;
-    /* Scales the image to fit the container */
-    background-repeat: no-repeat;
-    /* Only one instance of the image */
-    background-position: center center;
-    /* Centers the image horizontally and positions it below the navbar */
-    background-attachment: fixed;
-    /* Makes the background static */
-    background-color: var(--secondary-color);
-    /* Fallback color */
+    background-size: auto; /* Image displays at native resolution, no stretching */
+    background-repeat: no-repeat; /* Ensure single instance */
+    background-position: center center; /* Keeps image in the middle */
+    background-attachment: scroll; /* Reliable scrolling on all devices */
+    background-color: var(--secondary-color); /* Matches image background for seamless blend */
 }
 
 h1 {
