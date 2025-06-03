@@ -20,11 +20,18 @@ body {
     font-family: var(--primary-font);
     padding-top: 89px;
     background-image: url('../images/Missioned_Souls4.jpg');
-    background-size: auto; /* Image displays at native resolution, no stretching */
-    background-repeat: no-repeat; /* Ensure single instance */
-    background-position: center center; /* Keeps image in the middle */
-    background-attachment: scroll; /* Reliable scrolling on all devices */
-    background-color: var(--secondary-color); /* Matches image background for seamless blend */
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center 89px; /* <-- CHANGE THIS LINE */
+    background-attachment: scroll; /* Keep this for reliable scrolling */
+    background-color: var(--secondary-color); /* For seamless blend */
+}
+
+/* --- Mobile Specific Adjustments (keep this media query) --- */
+@media (max-width: 991.98px) {
+    body {
+        background-attachment: scroll; /* Image scrolls with content on mobile */
+    }
 }
 
 h1 {
@@ -179,14 +186,4 @@ h1 {
     width: 100%;
     height: 100%;
     object-fit: cover;
-}
-
-/* grid visualisation CSS for testing */
-/* .container,
-.row {
-    border: 2px solid black;
-}
-.col-12 {
-    border: 2px solid white;
-    background-color: lightgray;
 }
