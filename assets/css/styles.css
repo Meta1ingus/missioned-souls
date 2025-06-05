@@ -17,20 +17,25 @@
 
 /* Global Styles */
 /* Basic reset/setup */
-html, body {
-    height: 100%; /* Important for sticky footer */
+html,
+body {
+    height: 100%;
+    /* Important for sticky footer */
     margin: 0;
     padding: 0;
 }
 
 .site-wrapper {
     display: flex;
-    flex-direction: column; /* Stack children vertically */
-    min-height: 100vh; /* Ensure the wrapper takes at least the full viewport height */
+    flex-direction: column;
+    /* Stack children vertically */
+    min-height: 100vh;
+    /* Ensure the wrapper takes at least the full viewport height */
 }
 
 main {
-    flex-grow: 1; /* This makes the main content take up all available space */
+    flex-grow: 1;
+    /* This makes the main content take up all available space */
     /* Add any padding or margin you need for your main content here */
 }
 
@@ -40,15 +45,19 @@ body {
     background-image: url('../images/Missioned_Souls4.jpg');
     background-size: auto;
     background-repeat: no-repeat;
-    background-position: center 89px; /* <-- CHANGE THIS LINE */
-    background-attachment: scroll; /* Keep this for reliable scrolling */
-    background-color: var(--secondary-color); /* For seamless blend */
+    background-position: center 89px;
+    /* <-- CHANGE THIS LINE */
+    background-attachment: scroll;
+    /* Keep this for reliable scrolling */
+    background-color: var(--secondary-color);
+    /* For seamless blend */
 }
 
 /* --- Mobile Specific Adjustments (keep this media query) --- */
 @media (max-width: 991.98px) {
     body {
-        background-attachment: scroll; /* Image scrolls with content on mobile */
+        background-attachment: scroll;
+        /* Image scrolls with content on mobile */
     }
 }
 
@@ -89,21 +98,26 @@ h1 {
         /* This ensures the *container* of the collapsed menu takes full width,
            but we won't put the background here. */
         position: absolute;
-        top: 89px; /* Position it directly below the navbar's height */
+        top: 89px;
+        /* Position it directly below the navbar's height */
         left: 0;
         right: 0;
         /* No background here */
-        padding-bottom: 1rem; /* Some padding at the bottom of the whole expanded area */
+        padding-bottom: 1rem;
+        /* Some padding at the bottom of the whole expanded area */
     }
 
     .navbar-nav {
         /* ... (Keep existing flexbox and background styles for the .navbar-nav block) ... */
         display: flex;
         flex-direction: column;
-        align-items: flex-end; /* This keeps the entire block of links aligned to the right */
+        align-items: flex-end;
+        /* This keeps the entire block of links aligned to the right */
         margin-left: auto !important;
-        background-color: rgba(24, 52, 62, 0.90); /* Semi-transparent dark background */
-        padding: 1rem; /* Padding around the entire block of links */
+        background-color: rgba(24, 52, 62, 0.90);
+        /* Semi-transparent dark background */
+        padding: 1rem;
+        /* Padding around the entire block of links */
         width: fit-content;
         min-width: 150px;
         border-radius: 0.5rem;
@@ -115,11 +129,15 @@ h1 {
     }
 
     .navbar-nav .nav-link {
-        display: flex; /* Make the anchor tag a flex container */
-        justify-content: center; /* Center content horizontally within the flex container */
-        align-items: center; /* Center content vertically (useful if links have variable heights) */
+        display: flex;
+        /* Make the anchor tag a flex container */
+        justify-content: center;
+        /* Center content horizontally within the flex container */
+        align-items: center;
+        /* Center content vertically (useful if links have variable heights) */
 
-        width: 100%; /* Ensure the anchor tag fills its parent .nav-item's width */
+        width: 100%;
+        /* Ensure the anchor tag fills its parent .nav-item's width */
 
         /* Symmetrical padding for spacing around the centered text */
         padding: 0.5rem 1rem;
@@ -133,7 +151,7 @@ h1 {
         padding-left: 1rem !important;
     }
 
-    /* Ensure toggler is on the right - Keep this to push the toggler right */
+    /* Ensure toggler is on the right */
     .navbar-toggler {
         margin-left: auto;
         margin-right: 1rem;
@@ -205,16 +223,23 @@ h1 {
     height: 100%;
     object-fit: cover;
 }
+
 /* Footer */
 footer {
-    background-color: rgba(24, 52, 62, 0.80); /* Semi-transparent dark background */
-    color: #eee; /* Light text color for contrast */
-    padding: 20px 0; /* Padding for the footer */
-    text-align: center; /* Center the social networks list */
+    background-color: rgba(24, 52, 62, 0.80);
+    /* Semi-transparent dark background */
+    color: #eee;
+    /* Light text color for contrast */
+    padding: 20px 0;
+    /* Padding for the footer */
+    text-align: center;
+    /* Center the social networks list */
 }
+
 #social-networks {
     text-align: center;
-    padding: 0; /* Adjust or remove if footer padding is enough */
+    padding: 0;
+    /* Adjust or remove if footer padding is enough */
     display: flex;
     justify-content: space-evenly;
     list-style-type: none;
@@ -223,8 +248,10 @@ footer {
 #social-networks i {
     font-size: 160%;
     padding: 5%;
-    color: var(--highlight-color, #fff); /* Fallback color */
+    color: var(--highlight-color, #fff);
+    /* Fallback color */
 }
+
 /* CSS for hover effect */
 #social-networks a:hover i {
     color: #fff;
