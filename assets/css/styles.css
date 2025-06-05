@@ -42,15 +42,46 @@ main {
 body {
     font-family: var(--primary-font);
     padding-top: 89px;
+    /* >>> REMOVE THESE LINES <<<
     background-image: url('../images/Missioned_Souls4.jpg');
     background-size: auto;
     background-repeat: no-repeat;
     background-position: center 89px;
-    /* <-- CHANGE THIS LINE */
     background-attachment: scroll;
-    /* Keep this for reliable scrolling */
-    background-color: var(--secondary-color);
-    /* For seamless blend */
+     >>> END REMOVE <<< */
+    background-color: var(--secondary-color); /* Keep this! */
+    height: 100%; /* Important for pseudo-element */
+    position: relative; /* Important for pseudo-element */
+    overflow-x: hidden; /* Good practice */
+}
+
+/* --- Pseudo-element for Transparent Background Image --- */
+body::before {
+    content: ""; /* Essential for pseudo-elements */
+    position: fixed; /* This makes the background image fixed in the viewport, it won't scroll */
+    /* If you want it to scroll with content, change to 'position: absolute;' and remove 'height: 100%' if body is already 100% */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; /* Makes it cover the full viewport height when position: fixed */
+    background-image: url('../images/Missioned_Souls4.jpg');
+    background-size: cover; /* Scales the image to cover the entire pseudo-element */
+    background-repeat: no-repeat;
+    /* Adjust this background-position. If fixed, 'center' often works well.
+       If you want it to appear *below* your fixed navbar, you could try:
+       background-position: center 89px;
+       OR, for simpler positioning, apply top: 89px to the pseudo-element itself if it's position: fixed:
+       top: 89px;
+       height: calc(100% - 89px);
+       background-position: center top;
+       Let's stick with fixed top:0, and position the image within it.
+    */
+    background-position: center; /* Center the image within the fixed viewport background */
+    /* background-attachment is not typically needed for position: fixed, as it's inherently fixed.
+       If you changed to position: absolute, you'd want background-attachment: scroll;
+    */
+    opacity: 0.4; /* Adjust this value (0.0 to 1.0) for desired transparency */
+    z-index: -1; /* Ensures it stays behind all content */
 }
 
 /* --- Mobile Specific Adjustments (keep this media query) --- */
@@ -226,7 +257,7 @@ h1 {
 
 /* Footer */
 footer {
-    background-color: rgba(24, 52, 62, 0.80);
+    background-color: rgba(24, 52, 62, 0.85);
     /* Semi-transparent dark background */
     color: #eee;
     /* Light text color for contrast */
