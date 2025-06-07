@@ -301,58 +301,39 @@ footer {
 
 /* Gallery Styles */
 .gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Adjust minmax for desired column width */
-    gap: 1.5em; /* Space between grid items */
     max-width: 1200px;
-    margin: 0 auto; /* Center the grid */
+    margin: 0 auto; /* Center the entire layout */
+    column-count: 3; /* Adjust number of columns for desktop view */
+    column-gap: 1em; /* Space between columns (same as your previous grid gap) */
 }
 
 .gallery-grid figure {
-    margin: 0;
-    background-color: #fff;
+    margin: 0 0 1.5em 0; /* Bottom margin for spacing between figures */
     border-radius: 8px;
-    overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-direction: column;
+    overflow: hidden; /* Important for rounded corners */
+
+    /* Ensure figures don't break across columns in an awkward way */
+    break-inside: avoid-column; /* Old property for compatibility */
+    -webkit-column-break-inside: avoid; /* Webkit specific for compatibility */
+    page-break-inside: avoid; /* Print specific for compatibility */
 }
 
 .gallery-grid img {
-    width: 100%;
-    /* Keep a consistent height for your grid cells, and let object-fit handle aspect ratios */
-    height: 250px; /* Example fixed height for grid consistency */
-    object-fit: cover; /* Crop to fill */
-    object-position: center;
-    display: block;
+    width: 100%; /* Image fills the width of its parent figure (which fills its column) */
+    height: auto; /* Image maintains its original aspect ratio */
+    display: block; /* Removes any extra space below the image */
 }
 
-.gallery-grid figcaption {
-    padding: 1em;
-    text-align: center;
-    font-size: 0.9em;
-    color: #555;
-    flex-grow: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-/* Basic Media Queries for fine-tuning */
+/* Media queries for adjusting column count based on screen size */
 @media (max-width: 768px) {
     .gallery-grid {
-        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    }
-    .gallery-grid img {
-        height: 200px;
+        column-count: 2; /* Two columns on tablets */
     }
 }
 
 @media (max-width: 480px) {
     .gallery-grid {
-        grid-template-columns: 1fr; /* Single column on very small screens */
-    }
-    .gallery-grid img {
-        height: 180px;
+        column-count: 1; /* Single column on very small screens (mobile) */
     }
 }
