@@ -49,23 +49,31 @@ body {
     background-position: center 89px;
     background-attachment: scroll;
      >>> END REMOVE <<< */
-    background-color: var(--secondary-color); /* Keep this! */
-    height: 100%; /* Important for pseudo-element */
-    position: relative; /* Important for pseudo-element */
-    overflow-x: hidden; /* Good practice */
+    background-color: var(--secondary-color);
+    /* Keep this! */
+    height: 100%;
+    /* Important for pseudo-element */
+    position: relative;
+    /* Important for pseudo-element */
+    overflow-x: hidden;
+    /* Good practice */
 }
 
 /* --- Pseudo-element for Transparent Background Image --- */
 body::before {
-    content: ""; /* Essential for pseudo-elements */
-    position: fixed; /* This makes the background image fixed in the viewport, it won't scroll */
+    content: "";
+    /* Essential for pseudo-elements */
+    position: fixed;
+    /* This makes the background image fixed in the viewport, it won't scroll */
     /* If you want it to scroll with content, change to 'position: absolute;' and remove 'height: 100%' if body is already 100% */
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%; /* Makes it cover the full viewport height when position: fixed */
+    height: 100%;
+    /* Makes it cover the full viewport height when position: fixed */
     background-image: url('../images/Missioned_Souls4.jpg');
-    background-size: cover; /* Scales the image to cover the entire pseudo-element */
+    background-size: cover;
+    /* Scales the image to cover the entire pseudo-element */
     background-repeat: no-repeat;
     /* Adjust this background-position. If fixed, 'center' often works well.
        If you want it to appear *below* your fixed navbar, you could try:
@@ -76,12 +84,15 @@ body::before {
        background-position: center top;
        Let's stick with fixed top:0, and position the image within it.
     */
-    background-position: center; /* Center the image within the fixed viewport background */
+    background-position: center;
+    /* Center the image within the fixed viewport background */
     /* background-attachment is not typically needed for position: fixed, as it's inherently fixed.
        If you changed to position: absolute, you'd want background-attachment: scroll;
     */
-    opacity: 0.4; /* Adjust this value (0.0 to 1.0) for desired transparency */
-    z-index: -1; /* Ensures it stays behind all content */
+    opacity: 0.4;
+    /* Adjust this value (0.0 to 1.0) for desired transparency */
+    z-index: -1;
+    /* Ensures it stays behind all content */
 }
 
 /* --- Mobile Specific Adjustments (keep this media query) --- */
@@ -286,4 +297,62 @@ footer {
 /* CSS for hover effect */
 #social-networks a:hover i {
     color: #fff;
+}
+
+/* Gallery Styles */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Adjust minmax for desired column width */
+    gap: 1.5em; /* Space between grid items */
+    max-width: 1200px;
+    margin: 0 auto; /* Center the grid */
+}
+
+.gallery-grid figure {
+    margin: 0;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.gallery-grid img {
+    width: 100%;
+    /* Keep a consistent height for your grid cells, and let object-fit handle aspect ratios */
+    height: 250px; /* Example fixed height for grid consistency */
+    object-fit: cover; /* Crop to fill */
+    object-position: center;
+    display: block;
+}
+
+.gallery-grid figcaption {
+    padding: 1em;
+    text-align: center;
+    font-size: 0.9em;
+    color: #555;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Basic Media Queries for fine-tuning */
+@media (max-width: 768px) {
+    .gallery-grid {
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+    .gallery-grid img {
+        height: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery-grid {
+        grid-template-columns: 1fr; /* Single column on very small screens */
+    }
+    .gallery-grid img {
+        height: 180px;
+    }
 }
