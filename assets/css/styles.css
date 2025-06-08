@@ -224,6 +224,11 @@ h1 {
     text-decoration: none;
 }
 
+/* Fix for fixed navbar obscuring anchored content */
+:target {
+    scroll-margin-top: 89px; /* Adjusts scroll position for fixed navbar */
+}
+
 .content-section-inner {
     max-width: 75%;
     /* Sets a maximum width for the div */
