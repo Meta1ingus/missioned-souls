@@ -308,7 +308,7 @@ footer {
 }
 
 .gallery-grid figure {
-    margin: 0 0 1.5em 0; /* Bottom margin for spacing between figures */
+    margin: 0 0 1em 0; /* Bottom margin for spacing between figures */
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden; /* Important for rounded corners */
