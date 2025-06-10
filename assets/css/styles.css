@@ -38,7 +38,6 @@ body {
     font-family: var(--primary-font);
     padding-top: 89px;
     background-color: var(--secondary-color);
-    height: 100%; /* Ensures the body takes full height */
     position: relative; /* Allows pseudo-element to be positioned relative to the body */
     overflow-x: hidden; /* Prevents horizontal scroll */
 }
