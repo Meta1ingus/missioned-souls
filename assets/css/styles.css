@@ -22,14 +22,6 @@ body {
     padding: 0;
 }
 
-.site-wrapper {
-    display: flex;
-    flex-direction: column;
-    /* Stack children vertically */
-    min-height: 100vh;
-    /* Ensures the wrapper takes at least the full viewport height */
-}
-
 main {
     flex-grow: 1;
 }
