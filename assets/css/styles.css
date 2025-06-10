@@ -212,10 +212,6 @@ h1 {
     /* Centers the text inside the div */
 }
 
-.content-section-inner p:nth-of-type(1) {
-    font-family: var(--primary-font);
-}
-
 .video-container {
     position: relative;
     width: 100%;
