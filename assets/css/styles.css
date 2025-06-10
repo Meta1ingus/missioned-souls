@@ -5,18 +5,15 @@
 :root {
     --primary-font: "Fredoka", sans-serif;
     --secondary-font: "Jacques Francois Shadow", sans-serif;
-    --primary-color: #26525e;
-    /* Blue Dianne */
-    --secondary-color: #eef1f1;
-    /* Light Greyish Cyan */
-    --highlight-color: #a1c9ce;
-    /* Light Blue Dianne */
-    --secondary-highlight-color: #18343e;
-    /* Dark Blue Dianne */
+    --primary-color: #26525e; /* Dark Blue Dianne */
+    --secondary-color: #eef1f1; /* Light Gray Dianne */
+    --highlight-color: #a1c9ce; /* Light Blue Dianne */
+    --secondary-highlight-color: #18343e; /* Dark Blue Dianne */
 }
 
 /* Global Styles */
-/* Basic reset/setup */
+
+/* Basic setup */
 html,
 body {
     height: 100%;
@@ -30,25 +27,20 @@ body {
     flex-direction: column;
     /* Stack children vertically */
     min-height: 100vh;
-    /* Ensure the wrapper takes at least the full viewport height */
+    /* Ensures the wrapper takes at least the full viewport height */
 }
 
 main {
     flex-grow: 1;
-    /* This makes the main content take up all available space */
-    /* Add any padding or margin you need for your main content here */
 }
 
 body {
     font-family: var(--primary-font);
     padding-top: 89px;
     background-color: var(--secondary-color);
-    height: 100%;
-    /* Important for pseudo-element */
-    position: relative;
-    /* Important for pseudo-element */
-    overflow-x: hidden;
-    /* Good practice */
+    height: 100%; /* Ensures the body takes full height */
+    position: relative; /* Allows pseudo-element to be positioned relative to the body */
+    overflow-x: hidden; /* Prevents horizontal scroll */
 }
 
 /* --- Pseudo-element for Transparent Background Image --- */
@@ -57,7 +49,6 @@ body::before {
     /* Essential for pseudo-elements */
     position: fixed;
     /* This makes the background image fixed in the viewport, it won't scroll */
-    /* If you want it to scroll with content, change to 'position: absolute;' and remove 'height: 100%' if body is already 100% */
     top: 0;
     left: 0;
     width: 100%;
@@ -67,27 +58,19 @@ body::before {
     background-size: cover;
     /* Scales the image to cover the entire pseudo-element */
     background-repeat: no-repeat;
-    /* Adjust this background-position. If fixed, 'center' often works well.
-       If you want it to appear *below* your fixed navbar, you could try:
-       background-position: center 89px;
-       OR, for simpler positioning, apply top: 89px to the pseudo-element itself if it's position: fixed:
-       top: 89px;
-       height: calc(100% - 89px);
-       background-position: center top;
-       Let's stick with fixed top:0, and position the image within it.
-    */
+    /* Adjust this background-position */
     background-position: center;
-    /* Center the image within the fixed viewport background */
-    /* background-attachment is not typically needed for position: fixed, as it's inherently fixed.
-       If you changed to position: absolute, you'd want background-attachment: scroll;
-    */
+    /* Centre the image within the fixed viewport background */
     opacity: 0.4;
-    /* Adjust this value (0.0 to 1.0) for desired transparency */
     z-index: -1;
     /* Ensures it stays behind all content */
 }
 
-/* --- Mobile Specific Adjustments (keep this media query) --- */
+#bio {
+    color: var(--secondary-highlight-color);
+}
+
+/* --- Mobile Specific Adjustments --- */
 @media (max-width: 991.98px) {
     body {
         background-attachment: scroll;
@@ -115,9 +98,9 @@ h1 {
     background-repeat: no-repeat;
     /* Prevents the image from repeating */
     background-position: center;
-    /* Centers the image in the navbar */
+    /* Centres the image in the navbar */
     background-color: var(--secondary-highlight-color);
-    /* Fallback color */
+    /* Fallback colour */
     z-index: 1000;
     /* Ensures the navbar is above other content */
 }
@@ -129,20 +112,17 @@ h1 {
     /* This media query targets screens smaller than Bootstrap's 'lg' breakpoint (992px) */
 
     .navbar-collapse.show {
-        /* This ensures the *container* of the collapsed menu takes full width,
-           but we won't put the background here. */
+        /* This ensures the *container* of the collapsed menu takes full width */
         position: absolute;
         top: 89px;
         /* Position it directly below the navbar's height */
         left: 0;
         right: 0;
-        /* No background here */
         padding-bottom: 1rem;
         /* Some padding at the bottom of the whole expanded area */
     }
 
     .navbar-nav {
-        /* ... (Keep existing flexbox and background styles for the .navbar-nav block) ... */
         display: flex;
         flex-direction: column;
         align-items: flex-end;
@@ -159,25 +139,19 @@ h1 {
 
     .navbar-nav .nav-item {
         width: 100%;
-        /* REMOVE text-align: center; from here. We'll put it on the link directly. */
     }
 
     .navbar-nav .nav-link {
         display: flex;
         /* Make the anchor tag a flex container */
         justify-content: center;
-        /* Center content horizontally within the flex container */
+        /* Centre content horizontally within the flex container */
         align-items: center;
-        /* Center content vertically (useful if links have variable heights) */
+        /* Centre content vertically (useful if links have variable heights) */
 
         width: 100%;
         /* Ensure the anchor tag fills its parent .nav-item's width */
-
-        /* Symmetrical padding for spacing around the centered text */
         padding: 0.5rem 1rem;
-        /* You can adjust 1rem for more or less horizontal spacing if needed */
-
-        /* Remove text-align: center; as flexbox handles centering now */
     }
 
     /* Adjust navbar brand/logo on mobile - Keep this for good mobile padding */
@@ -206,13 +180,13 @@ h1 {
 
 .nav-link.active {
     color: var(--secondary-color) !important;
-    /* Ensures the active link color is applied */
+    /* Ensures the active link colour is applied */
 }
 
 .nav-link:hover,
 .nav-link:focus {
     color: white;
-    /* Or another color for hover/focus */
+    /* Or another colour for hover/focus */
     text-decoration: none;
 }
 
@@ -224,9 +198,9 @@ h1 {
     max-width: 75%;
     /* Sets a maximum width for the div */
     margin-left: auto;
-    /* Centers the div horizontally */
+    /* Centres the div horizontally */
     margin-right: auto;
-    /* Centers the div horizontally */
+    /* Centres the div horizontally */
     padding: 20px;
     /* Adds padding inside the div */
     background-color: rgba(238, 241, 241, 0);
@@ -277,7 +251,6 @@ footer {
 #social-networks {
     text-align: center;
     padding: 0;
-    /* Adjust or remove if footer padding is enough */
     display: flex;
     justify-content: space-evenly;
     list-style-type: none;
@@ -287,7 +260,7 @@ footer {
     font-size: 160%;
     padding: 5%;
     color: var(--highlight-color, #fff);
-    /* Fallback color */
+    /* Fallback colour */
 }
 
 /* CSS for hover effect */
@@ -298,7 +271,7 @@ footer {
 /* Gallery Styles */
 .gallery-grid {
     max-width: 1200px;
-    margin: 0 auto; /* Center the entire layout */
+    margin: 0 auto; /* Centre the entire layout */
     column-count: 3; /* Adjust number of columns for desktop view */
     column-gap: 1em; /* Space between columns (same as your previous grid gap) */
 }
