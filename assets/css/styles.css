@@ -5,10 +5,10 @@
 :root {
     --primary-font: "Fredoka", sans-serif;
     --secondary-font: "Jacques Francois Shadow", sans-serif;
-    --primary-color: #26525e; /* Dark Blue Dianne */
-    --secondary-color: #eef1f1; /* Light Gray Dianne */
-    --highlight-color: #a1c9ce; /* Light Blue Dianne */
-    --secondary-highlight-color: #18343e; /* Dark Blue Dianne */
+    --primary-color: #26525e; /* Midnight Green */
+    --secondary-color: #eef1f1; /* Anti-flash White */
+    --highlight-color: #a1c9ce; /* Light Blue */
+    --secondary-highlight-color: #18343e; /* Gunmetal */
 }
 
 /* Global Styles */
