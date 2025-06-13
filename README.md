@@ -191,12 +191,12 @@ Here is a breakdown of the tools, resources, and learning materials that were in
 | [GitHub](https://github.com/) | Project Hosting | The platform used to host the entire project repository. |
 | [W3C HTML Validator](https://validator.w3.org/#validate_by_input) | Validation (HTML) | Employed to check HTML code for errors and ensure compliance with web standards. |
 | [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) | Validation (CSS) | Used to check CSS code for errors and maintain compliance with standards. |
-| [Prettier - Code Formatter](https://open-vsx.org/vscode/item?itemName=esbenp.prettier-vscode) | Development (Formatting) | A VS Code extension used for formatting the HTML files. |
+| [Beautify](https://marketplace.visualstudio.com/items?itemName=HookyQR.beautify) | Development (Formatting) | A VS Code extension used for formatting the HTML files. |
 | [W3Schools](https://www.w3schools.com/) | Reference (Syntax) | Valuble for its straightforward guides and interactive examples for various web development languages and technologies. |
 | [Stack Overflow](https://stackoverflow.com/questions) | Reference | A community-driven Q&A platform where developers ask and vote on technical solutions, serving as an invaluable resource for problem-solving and knowledge sharing. |
 | [Cloudflare](https://www.cloudflare.com/) | Video Hosting | A dedicated service that optimises video hosting and delivery. It handles storage, encoding, and global content distribution to ensure fast loading and smooth, adaptive playback for viewers worldwide. |
 | [Cloudinary](https://cloudinary.com/) | Image Hosting | A comprehensive cloud-based platform for image management. It enables automated optimisation, dynamic transformations, and rapid delivery of photos through a global CDN, ensuring optimal performance and responsiveness across all devices. |
-| [AAutoprefixer CSS online](https://autoprefixer.github.io/) | A post-processor tool that automatically adds, and removes, vendor prefixes to the CSS rules. This ensures broader cross-browser compatibility for modern CSS features without requiring manual upkeep of prefixes. |
+| [Autoprefixer CSS online](https://autoprefixer.github.io/) | Development Utility | A post-processor tool that automatically adds, and removes, vendor prefixes to the CSS rules. This ensures broader cross-browser compatibility for modern CSS features without requiring manual upkeep of prefixes. |
 
 ---
 
@@ -206,13 +206,15 @@ Here is a breakdown of the tools, resources, and learning materials that were in
 
 To validate the code, I used W3C validation sevice (see tools).
 
-#### HTML
+## Lighthouse
+
+### HTML
 
 **index.html errors and clearance**
 
 Initially, `index.html` presented a validation error.
 
-##### Initial Errors:
+### Initial Errors:
 This image highlights the error identified in the initial validation pass of `index.html`.
 
 * **Error Screenshot 1: Structure Issue**
@@ -221,7 +223,7 @@ This image highlights the error identified in the initial validation pass of `in
 
 After careful review and adjustments, all identified issues were successfully resolved. The validation report now shows a clean status.
 
-##### Cleared Status:
+### Cleared Status:
 This image confirms that `index.html` now passes W3C validation without any errors or warnings.
 
 * **Cleared Screenshot 1:**
@@ -230,46 +232,46 @@ This image confirms that `index.html` now passes W3C validation without any erro
 
 **media.html errors and clearance**
 
-Initially, `media.html` presented a significant number of validation errors. These issues primarily stemmed from incorrect attribute formatting within the <video> tags and invalid type values in the <source> tags.
+Initially, `media.html` presented a significant number of validation errors. These issues primarily stemmed from incorrect attribute formatting within the <video> tags and invalid type values in the <source> tags. This formatting was brought on by using a different HTML formatter before using Beautify again.
 
-##### Initial Errors:
+### Initial Errors:
 These 8 screenshots detail the various errors identified in the initial validation pass of `media.html`.
 
-**Error Screenshot 1: Duplicate Attribute**
+* **Error Screenshot 1: Duplicate Attribute**
     ![Media.html - Initial Errors Part 1](https://res.cloudinary.com/dvsifzmes/image/upload/media_error1_kssrqg.png)
     * *This image highlights the first instance of a duplicated attribute (spacing) within a video tag.*
 
-**Error Screenshot 2: Duplicate Attribute (cont.)**
+* **Error Screenshot 2: Duplicate Attribute (cont.)**
     ![Media.html - Initial Errors Part 2](https://res.cloudinary.com/dvsifzmes/image/upload/media_error2_hb6f1i.png)
     * *Another instance of the attribute (spacing) appearing multiple times in a video element.*
 
-**Error Screenshot 3: Duplicate Attribute (cont.)**
+* **Error Screenshot 3: Duplicate Attribute (cont.)**
     ![Media.html - Initial Errors Part 3](https://res.cloudinary.com/dvsifzmes/image/upload/media_error3_gzntjj.png)
     * *Another instance of the attribute (spacing) appearing multiple times in a video element and an error where the 'type' attribute for the WebM and MP4 sources had an invalid value (e.g., a trailing semicolon).*
 
-**Error Screenshot 4: Duplicate Attribute (cont.)**
+* **Error Screenshot 4: Duplicate Attribute (cont.)**
     ![Media.html - Initial Errors Part 4](https://res.cloudinary.com/dvsifzmes/image/upload/media_error4_jusdmk.png)
     * *Another instance of the attribute (spacing) appearing multiple times in a video element.*
 
-**Error Screenshot 5: Duplicate Attribute (cont.)**
+* **Error Screenshot 5: Duplicate Attribute (cont.)**
     ![Media.html - Initial Errors Part 5](https://res.cloudinary.com/dvsifzmes/image/upload/media_error5_r0rwse.png)
     * *Another instance of the attribute (spacing) appearing multiple times in a video element.*
 
-**Error Screenshot 6: Duplicate Attribute (cont.)**
+* **Error Screenshot 6: Duplicate Attribute (cont.)**
     ![Media.html - Initial Errors Part 6](https://res.cloudinary.com/dvsifzmes/image/upload/media_error6_qnhxk0.png)
     * *Another instance of the attribute (spacing) appearing multiple times in a video element and an error where the 'type' attribute for the WebM and MP4 sources had an invalid value (e.g., a trailing semicolon).*
 
-**Error Screenshot 7: Duplicate Attribute (cont.)**
+* **Error Screenshot 7: Duplicate Attribute (cont.)**
     ![Media.html - Initial Errors Part 7](https://res.cloudinary.com/dvsifzmes/image/upload/media_error7_kp25nh.png)
     * *Another instance of the attribute (spacing) appearing multiple times in a video element.*
 
-**Error Screenshot 8: Duplicate Attribute (cont.)**
+* **Error Screenshot 8: Duplicate Attribute (cont.)**
     ![Media.html - Initial Errors Part 8](https://res.cloudinary.com/dvsifzmes/image/upload/media_error8_laxbfc.png)
     * *Another instance of the attribute (spacing) appearing multiple times in a video element and an error where the 'type' attribute for the WebM and MP4 sources had an invalid value (e.g., a trailing semicolon).*
 
 After extensive review and adjustments (specifically addressing duplicate and malformed attributes, and correcting source type values by removing trailing semicolons), all identified issues were successfully resolved. The validation report now shows a clean status.
 
-##### Cleared Status:
+### Cleared Status:
 This image confirms that `media.html` now passes W3C validation without any errors or warnings.
 
 * **Cleared Screenshot 1:**
@@ -280,7 +282,7 @@ This image confirms that `media.html` now passes W3C validation without any erro
 
 Upon initial validation, `gallery.html` was found to have no errors or warnings, indicating a clean and compliant HTML structure from the outset.
 
-##### Cleared Status:
+### Cleared Status:
 This screenshot confirms that `gallery.html` passes W3C validation without any issues.
 
 * **Cleared Screenshot 1:**
@@ -289,14 +291,12 @@ This screenshot confirms that `gallery.html` passes W3C validation without any i
 
 Upon initial validation, `styles.css` was found to have no errors or warnings, indicating a clean and compliant CSS structure from the outset.
 
-##### Cleared Status:
+### Cleared Status:
 This screenshot confirms that `styles.css` passes W3C validation without any issues.
 
 * **Cleared Screenshot 1:**
     ![Styles.css - Validation Cleared](https://res.cloudinary.com/dvsifzmes/image/upload/CSS_cleared_kadpuw.png)
     * *The validation report showing a clean bill of health for `styles.css`*
-
-### Lighthouse
 
 ![81 Best Practices for both index.html and media.html](https://res.cloudinary.com/dvsifzmes/image/upload/best_practices_uknfel.png)
 
@@ -324,37 +324,63 @@ This documentation provides **clarity** on the nature of the warning and reinfor
 
 ![59 Best Practices in media.html](https://res.cloudinary.com/dvsifzmes/image/upload/gallery_best_practices_gpscvm.png)
 
-# Third-Party Cookies & Cloudinary
+## Third-Party Cookies & Cloudinary
 
-While manual testing using the **in-browser Lighthouse tool**, both `gallery.html` received a **Best Practices score of 59** due to a **deprecated API** and **third party cookies** 
+My website utilizes Cloudinary as a Content Delivery Network (CDN) to host and serve image assets. When content is embedded from Cloudinary, third-party cookies are set in the user's browser, currently totaling 11 cookies from `res.cloudinary.com`. These cookies, such as `_cfuvid`, `_cld_session_key`, and `__cf_bm`, are primarily for Cloudinary's operational purposes (e.g., session management, security, performance optimization) and are not used by my application for user tracking or advertising.
 
-This section provides awareness regarding Cloudinary’s third-party cookies and aligns with web standards and evolving privacy considerations.
+Modern browsers (Chrome, Firefox, Safari) are increasingly restricting third-party cookies due to privacy concerns, aiming to reduce cross-site tracking. This means some of these cookies may be blocked depending on browser settings and future updates.
 
-## Overview
-My website utilizes **Cloudinary** as a **Content Delivery Network (CDN)** to host and serve image assets. When content is embedded from Cloudinary, third-party cookies are set in the user's browser. Currently, our site uses **11 third-party cookies** from `res.cloudinary.com`.
+### My Approach & Considerations
 
-## Why This Matters
-Modern browsers—such as **Chrome, Firefox, and Safari**—are implementing restrictions on third-party cookies due to growing privacy concerns. These limitations aim to **reduce cross-site tracking**, meaning some cookies may be blocked depending on browser settings and future updates.
-
-Among the cookies set, common ones include:
-- `_cfuvid`, `_cld_session_key` (session-related cookies)
-- `__cf_bm` (Cloudflare security and performance optimization)
-
-## My Approach & Considerations
 While these cookies are not a critical issue for this project, I acknowledge their presence and consider the following factors:
 
-### ✅ **Operational Necessity**
-Cloudinary’s cookies ensure **efficient and secure delivery** of media. My application does *not* use them for user tracking or advertising purposes.
+- **Operational Necessity**: Cloudinary’s cookies ensure efficient and secure delivery of media. My application does not use them for user tracking or advertising purposes.
+- **External Control**: Since these cookies are part of Cloudinary’s service infrastructure, I cannot directly modify or remove them.
+- **Industry Evolution**: I am actively monitoring privacy-preserving technologies, including Google’s Privacy Sandbox, which aims to reduce reliance on third-party cookies.
+- **Performance vs. Privacy Trade-off**: Self-hosting media would remove third-party cookies, but it comes at a cost to performance, scalability, and automatic optimizations that Cloudinary provides. In this project, the benefits of a CDN outweigh the implications of third-party cookies.
 
-### 🚧 **External Control**
-Since these cookies are part of Cloudinary’s service infrastructure, I **cannot directly modify or remove them**.
+### Transparency & User Options
 
-### 🔍 **Industry Evolution**
-I am actively monitoring **privacy-preserving technologies**, including **Google’s Privacy Sandbox**, which aims to reduce reliance on third-party cookies.
+For transparency, users can manage their cookie preferences via browser settings. Most modern browsers allow control over third-party cookies through privacy configurations.
 
-### ⚖️ **Performance vs. Privacy Trade-off**
-Self-hosting media would remove third-party cookies, but it comes at a **cost to performance, scalability, and automatic optimisations** that Cloudinary provides. In this project, **the benefits of a CDN outweigh the implications of third-party cookies**.
+![Lighthouse index.html](https://res.cloudinary.com/dvsifzmes/image/upload/lighthouse_home_pejv4h.png)
 
-## Transparency & User Options
-For transparency, users can manage their cookie preferences via **browser settings**. Most modern browsers allow control over third-party cookies through privacy configurations.
+![Lighthouse media.html](https://res.cloudinary.com/dvsifzmes/image/upload/lighthouse_media_z3aqsv.png)
+
+![Lighthouse media.html](https://res.cloudinary.com/dvsifzmes/image/upload/lighthouse_media_z3aqsv.png)
+
+![Lighthouse media.html SEO text](https://res.cloudinary.com/dvsifzmes/image/upload/media_SEO_text_b0hgjl.png)
+
+![Lighthouse media.html SEO fixed](https://res.cloudinary.com/dvsifzmes/image/upload/media_SEO_fixed_s9i70x.png)
+
+## Accessibility & SEO Improvement: Descriptive Link Text for Buttons
+
+### Issue
+Lighthouse flagged generic link text such as **"More"** on buttons, indicating a lack of context for screen readers and search engines. This hindered accessibility and SEO by making it unclear where the links lead.
+
+### Fix
+The text for all **"More"** buttons leading to external YouTube videos was updated to be highly descriptive. The generic "More" was replaced with clear, contextual phrases:
+
+- **Watch "[Video Title]" on YouTube**
+
+This provides immediate clarity on the link's destination and content, benefiting both **usability** and **search engine optimization**.
+
+### Example Before & After
+
+**Before:**
+## HTML
+<a href="https://www.youtube.com/watch?v=QWPZC6uk3hM" class="btn btn-primary">More</a>
+
+**After:**
+## HTML
+<a href="https://www.youtube.com/watch?v=QWPZC6uk3hM" class="btn btn-primary">Watch "Bad Medicine" on YouTube</a>
+
+## Benefits of the Fix
+**Enhanced accessibility** – Screen readers now convey meaningful link destinations.  
+**Improved SEO** – Search engines gain clearer understanding of the linked content.  
+**Better user experience** – Users instantly know where the link leads without ambiguity.  
+
+By implementing these changes, the website aligns better with best practices for **web accessibility** and **search engine optimization**, while maintaining a user-friendly experience.
+
+![Lighthouse gallery.html](https://res.cloudinary.com/dvsifzmes/image/upload/lighthouse_gallery_lkd8su.png)
 
