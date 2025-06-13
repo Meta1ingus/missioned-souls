@@ -95,21 +95,21 @@ The goal of MISSIONED SOULS is to create a website to help bring awareness to th
 
 #### Phone
 
-- [Home](![Mobile Home Page Wireframe](https://res.cloudinary.com/dvsifzmes/image/upload/Mobile_Home_owf4dp.png))
-- [Media](![Mobile Media Page Wireframe](https://res.cloudinary.com/dvsifzmes/image/upload/Mobile_Media_y7t1db.png))
-- [Gallery](![Mobile Gallery Page Wireframe](https://res.cloudinary.com/dvsifzmes/image/upload/Mobile_Gallery_repjbu.png))
+- (![Home](https://res.cloudinary.com/dvsifzmes/image/upload/Mobile_Home_owf4dp.png))
+- (![Media](https://res.cloudinary.com/dvsifzmes/image/upload/Mobile_Media_y7t1db.png))
+- (![Gallery](https://res.cloudinary.com/dvsifzmes/image/upload/Mobile_Gallery_repjbu.png))
 
 #### Tablet
 
-- [Home](![Tablet Home Page Wireframe](https://res.cloudinary.com/dvsifzmes/image/upload/Tablet_Home_gqfzxs.png))
-- [Media](![Tablet Media Page Wireframe](https://res.cloudinary.com/dvsifzmes/image/upload/Tablet_Media_xaifir))
-- [Gallery](![Tablet Gallery Page Wireframe](https://res.cloudinary.com/dvsifzmes/image/upload/Tablet_Gallery_rhs9tu))
+- (![Home](https://res.cloudinary.com/dvsifzmes/image/upload/Tablet_Home_gqfzxs.png))
+- (![Media](https://res.cloudinary.com/dvsifzmes/image/upload/Tablet_Media_xaifir))
+- (![Gallery](https://res.cloudinary.com/dvsifzmes/image/upload/Tablet_Gallery_rhs9tu))
 
 #### Desktop
 
-- [Home](![Desktop Home Page Wireframe](https://res.cloudinary.com/dvsifzmes/image/upload/Desktop_Home_vxi1bc))
-- [Media](![Desktop Media Page Wireframe](https://res.cloudinary.com/dvsifzmes/image/upload/Desktop_Media_pzkjhe))
-- [Gallery](![Desktop Gallery Page Wireframe](https://res.cloudinary.com/dvsifzmes/image/upload/Desktop_Gallery_uxy6cm))
+- (![Home](https://res.cloudinary.com/dvsifzmes/image/upload/Desktop_Home_vxi1bc))
+- (![Media](https://res.cloudinary.com/dvsifzmes/image/upload/Desktop_Media_pzkjhe))
+- (![Gallery](https://res.cloudinary.com/dvsifzmes/image/upload/Desktop_Gallery_uxy6cm))
 
 #### Design choices
 
