@@ -349,14 +349,14 @@ For transparency, users can manage their cookie preferences via browser settings
 
 ![Lighthouse media.html](https://res.cloudinary.com/dvsifzmes/image/upload/lighthouse_media_z3aqsv.png)
 
-![Lighthouse media.html SEO text](https://res.cloudinary.com/dvsifzmes/image/upload/media_SEO_text_b0hgjl.png)
-
-![Lighthouse media.html SEO fixed](https://res.cloudinary.com/dvsifzmes/image/upload/media_SEO_fixed_s9i70x.png)
-
 ## Accessibility & SEO Improvement: Descriptive Link Text for Buttons
+
+![Lighthouse media.html SEO text](https://res.cloudinary.com/dvsifzmes/image/upload/media_SEO_text_b0hgjl.png)
 
 ### Issue
 Lighthouse flagged generic link text such as **"More"** on buttons, indicating a lack of context for screen readers and search engines. This hindered accessibility and SEO by making it unclear where the links lead.
+
+![Lighthouse media.html SEO fixed](https://res.cloudinary.com/dvsifzmes/image/upload/media_SEO_fixed_s9i70x.png)
 
 ### Fix
 The text for all **"More"** buttons leading to external YouTube videos was updated to be highly descriptive. The generic "More" was replaced with clear, contextual phrases:
