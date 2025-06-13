@@ -1,6 +1,6 @@
   # Missioned Souls
 
-![Mockup](assets\images\multi_device_responsive_mockup.png)
+![Multi-Device Responsive Mockup](https://res.cloudinary.com/dvsifzmes/image/upload/multi_device_responsive_mockup_rxzhpb.png)
 
 [Link to project](https://meta1ingus.github.io/missioned-souls/)
 
@@ -95,21 +95,21 @@ The goal of MISSIONED SOULS is to create a website to help bring awareness to th
 
 #### Phone
 
-- [Home](assets\images\Mobile_Home.png)
-- [Media](assets\images\Mobile_Media.png)
-- [Gallery](assets\images\Mobile_Gallery.png)
+- [Home](![Mobile Home Page Wireframe](https://res.cloudinary.com/dvsifzmes/image/upload/Mobile_Home_owf4dp.png))
+- [Media](![Mobile Media Page Wireframe](https://res.cloudinary.com/dvsifzmes/image/upload/Mobile_Media_y7t1db.png))
+- [Gallery](![Mobile Gallery Page Wireframe](https://res.cloudinary.com/dvsifzmes/image/upload/Mobile_Gallery_repjbu.png))
 
 #### Tablet
 
-- [Home](assets\images\Tablet_Home.png)
-- [Media](assets\images\Tablet_Media.png)
-- [Gallery](assets\images\Tablet_Gallery.png)
+- [Home](![Tablet Home Page Wireframe](https://res.cloudinary.com/dvsifzmes/image/upload/Tablet_Home_gqfzxs.png))
+- [Media](![Tablet Media Page Wireframe](https://res.cloudinary.com/dvsifzmes/image/upload/Tablet_Media_xaifir))
+- [Gallery](![Tablet Gallery Page Wireframe](https://res.cloudinary.com/dvsifzmes/image/upload/Tablet_Gallery_rhs9tu))
 
 #### Desktop
 
-- [Home](assets\images\Desktop_Home.png)
-- [Media](assets\images\Desktop_Media.png)
-- [Gallery](assets\images\Desktop_Gallery.png)
+- [Home](![Desktop Home Page Wireframe](https://res.cloudinary.com/dvsifzmes/image/upload/Desktop_Home_vxi1bc))
+- [Media](![Desktop Media Page Wireframe](https://res.cloudinary.com/dvsifzmes/image/upload/Desktop_Media_pzkjhe))
+- [Gallery](![Desktop Gallery Page Wireframe](https://res.cloudinary.com/dvsifzmes/image/upload/Desktop_Gallery_uxy6cm))
 
 #### Design choices
 
