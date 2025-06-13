@@ -1,3 +1,6 @@
+/* Missioned Souls - Custom CSS */
+/* This file contains custom styles for the Missioned Souls website */
+
 /* Google fonts import */
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@500&family=Jacques+Francois+Shadow&display=swap');
 
@@ -23,7 +26,9 @@ body {
 }
 
 main {
-    flex-grow: 1;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
 }
 
 body {
@@ -113,15 +118,24 @@ h1 {
     }
 
     .navbar-nav {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
-        align-items: flex-end;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: end;
+            -ms-flex-align: end;
+                align-items: flex-end;
         /* This keeps the entire block of links aligned to the right */
         margin-left: auto !important;
         background-color: rgba(24, 52, 62, 0.90);
         /* Semi-transparent dark background */
         padding: 1rem;
         /* Padding around the entire block of links */
+        width: -webkit-fit-content;
+        width: -moz-fit-content;
         width: fit-content;
         min-width: 150px;
         border-radius: 0.5rem;
@@ -132,11 +146,17 @@ h1 {
     }
 
     .navbar-nav .nav-link {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         /* Make the anchor tag a flex container */
-        justify-content: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
         /* Centre content horizontally within the flex container */
-        align-items: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
         /* Centre content vertically (useful if links have variable heights) */
 
         width: 100%;
@@ -218,7 +238,8 @@ h1 {
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
 }
 
 /* Footer */
@@ -236,8 +257,12 @@ footer {
 #social-networks {
     text-align: center;
     padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-evenly;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
     list-style-type: none;
 }
 
@@ -257,18 +282,24 @@ footer {
 .gallery-grid {
     max-width: 1200px;
     margin: 0 auto; /* Centre the entire layout */
-    column-count: 3; /* Adjust number of columns for desktop view */
-    column-gap: 1em; /* Space between columns (same as your previous grid gap) */
+    -webkit-column-count: 3;
+       -moz-column-count: 3;
+            column-count: 3; /* Adjust number of columns for desktop view */
+    -webkit-column-gap: 1em;
+       -moz-column-gap: 1em;
+            column-gap: 1em; /* Space between columns (same as your previous grid gap) */
 }
 
 .gallery-grid figure {
     margin: 0 0 1em 0; /* Bottom margin for spacing between figures */
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden; /* Important for rounded corners */
 
     /* Ensure figures don't break across columns in an awkward way */
-    break-inside: avoid-column; /* Old property for compatibility */
+    -moz-column-break-inside: avoid;
+         break-inside: avoid-column; /* Old property for compatibility */
     -webkit-column-break-inside: avoid; /* Webkit specific for compatibility */
     page-break-inside: avoid; /* Print specific for compatibility */
 }
@@ -282,12 +313,16 @@ footer {
 /* Media queries for adjusting column count based on screen size */
 @media (max-width: 768px) {
     .gallery-grid {
-        column-count: 2; /* Two columns on tablets */
+        -webkit-column-count: 2;
+           -moz-column-count: 2;
+                column-count: 2; /* Two columns on tablets */
     }
 }
 
 @media (max-width: 480px) {
     .gallery-grid {
-        column-count: 1; /* Single column on very small screens (mobile) */
+        -webkit-column-count: 1;
+           -moz-column-count: 1;
+                column-count: 1; /* Single column on very small screens (mobile) */
     }
 }
