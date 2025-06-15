@@ -513,8 +513,7 @@ _Solution_
 
 | Source                                   | Location                    | Type                   | Notes                                                                                                 |
 | ---------------------------------------- | --------------------------- | ---------------------- | ----------------------------------------------------------------------------------------------------- |
-| [MISSIONED SOULS](https://www.facebook.com/missionedsouls/photos_by)      | Photos            | images                 | I used seveal images, including logo, to use on the site. I recieved permission from the family to use images that are publically available on the social media sites                                                 |
+| [MISSIONED SOULS](https://www.facebook.com/missionedsouls/photos_by)      | Photos            | image                 | I used seveal images, including logo, to use on the site. I recieved permission from the family to use images that are publically available on the social media sites                                                 |
+| [Videos](https://www.youtube.com/@MissionedSouls) | Videos             | video                  | I used four videos to use as hard copies on the site. I recieved permission from the family to download videos locally using YouTube Premium to the convert into web-friendly MP4 and WebM formats.                                                                               |
 | [Font awesome](https://fontawesome.com/) | Social Media Icons             | Icons                  | Used to insert social media icons.                                                                                 |                                                                           |
-| [Gemini](https://gemini.google.com/)          | ALT descriptions `gallery.html` | Description | I used **Gemini** to help with generating _alt_ descriptions by having cloudinary auto generate tags for the images on the `gallery.html` page |
-
-[def]: #media.html-errors-and-clearance
+| [Gemini](https://gemini.google.com/)          | ALT descriptions `gallery.html` | Description | I used **Gemini** to help with generating _alt_ descriptions by having cloudinary auto generate tags for the images on the `gallery.html` page. |
