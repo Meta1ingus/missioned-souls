@@ -461,7 +461,7 @@ _Solution_
 
 _Problem_
 
-- [See for images of problem](#media.html-errors-and-clearance)
+- [See images of the problem](#mediahtml-errors-and-clearance)
 
 ![Problem in CSS code](https://res.cloudinary.com/dvsifzmes/image/upload/Prettier_added_spacing_dpkvpw.png)
 
@@ -516,3 +516,5 @@ _Solution_
 | [MISSIONED SOULS](https://www.facebook.com/missionedsouls/photos_by)      | Photos            | images                 | I used seveal images, including logo, to use on the site. I recieved permission from the family to use images that are publically available on the social media sites                                                 |
 | [Font awesome](https://fontawesome.com/) | Social Media Icons             | Icons                  | Used to insert social media icons.                                                                                 |                                                                           |
 | [Gemini](https://gemini.google.com/)          | ALT descriptions `gallery.html` | Description | I used **Gemini** to help with generating _alt_ descriptions by having cloudinary auto generate tags for the images on the `gallery.html` page |
+
+[def]: #media.html-errors-and-clearance
