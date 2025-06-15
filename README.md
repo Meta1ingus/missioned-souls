@@ -310,13 +310,13 @@ This screenshot confirms that `styles.css` passes W3C validation without any iss
     ![Styles.css - Validation Cleared](https://res.cloudinary.com/dvsifzmes/image/upload/CSS_cleared_kadpuw.png)
     * *The validation report showing a clean bill of health for `styles.css`*
 
-![81 Best Practices for both index.html and media.html](https://res.cloudinary.com/dvsifzmes/image/upload/best_practices_uknfel.png)
+### Deprecated API Warning
 
-### Deprecated API Warning  
+![81 Best Practices for both index.html and media.html](https://res.cloudinary.com/dvsifzmes/image/upload/best_practices_uknfel.png)  
 
 While manual testing using the **in-browser Lighthouse tool**, both `index.html` and `media.html` received a **Best Practices score of 81** due to a **deprecated API**. The same warning can be found on the `gallery.html` but the are is also another issue (see below).
 
-Our project aims to follow **modern web best practices**, and during testing, a browser warning appeared regarding the **deprecated `unload` JavaScript event**, originating from `contentInject.js`.  
+My project aims to follow **modern web best practices**, and during testing, a browser warning appeared regarding the **deprecated `unload` JavaScript event**, originating from `contentInject.js`.  
 
 ### Understanding the `unload` Event  
 
@@ -334,9 +334,9 @@ I ensure that:
 
 This documentation provides **clarity** on the nature of the warning and reinforces my commitment to **maintaining high coding standards**.
 
-![59 Best Practices in media.html](https://res.cloudinary.com/dvsifzmes/image/upload/gallery_best_practices_gpscvm.png)
+## Third-Party Cookies & Cloudinary 
 
-## Third-Party Cookies & Cloudinary
+![59 Best Practices in media.html](https://res.cloudinary.com/dvsifzmes/image/upload/gallery_best_practices_gpscvm.png)
 
 My website utilizes Cloudinary as a Content Delivery Network (CDN) to host and serve image assets. When content is embedded from Cloudinary, third-party cookies are set in the user's browser, currently totaling 11 cookies from `res.cloudinary.com`. These cookies, such as `_cfuvid`, `_cld_session_key`, and `__cf_bm`, are primarily for Cloudinary's operational purposes (e.g., session management, security, performance optimization) and are not used by my application for user tracking or advertising.
 
@@ -361,14 +361,14 @@ For transparency, users can manage their cookie preferences via browser settings
 
 ![Lighthouse media.html](https://res.cloudinary.com/dvsifzmes/image/upload/lighthouse_media_z3aqsv.png)
 
-![Lighthouse media.html SEO text](https://res.cloudinary.com/dvsifzmes/image/upload/media_SEO_text_b0hgjl.png)
-
-![Lighthouse media.html SEO fixed](https://res.cloudinary.com/dvsifzmes/image/upload/media_SEO_fixed_s9i70x.png)
-
 ## Accessibility & SEO Improvement: Descriptive Link Text for Buttons
+
+![Lighthouse media.html SEO text](https://res.cloudinary.com/dvsifzmes/image/upload/media_SEO_text_b0hgjl.png)
 
 ### Issue
 Lighthouse flagged generic link text such as **"More"** on buttons, indicating a lack of context for screen readers and search engines. This hindered accessibility and SEO by making it unclear where the links lead.
+
+![Lighthouse media.html SEO fixed](https://res.cloudinary.com/dvsifzmes/image/upload/media_SEO_fixed_s9i70x.png)
 
 ### Fix
 The text for all **"More"** buttons leading to external YouTube videos was updated to be highly descriptive. The generic "More" was replaced with clear, contextual phrases:
