@@ -37,7 +37,19 @@ MISSIONED SOULS is small website created with the purpose of making others aware
 
   - [Lighthouse](#lighthouse)
 
-- ## Introduction
+  - [Manual Testing](#manual-testing)
+
+  - [Browser Testing](#browser-testing)
+
+  - [Bugs](#bugs)
+
+- [Deployment](#deployment)
+
+- [Credits](#credits)
+
+  - [Media](#media)
+
+## Introduction
 
 Welcome to **MISSIONED SOULS**, an unofficial website dedicated to bringing you closer to the band. Here, you’ll find a collection of videos showcasing their performances, allowing you to hear and see the band in action. Whether you’re a fan looking to connect or an event organizer searching for talent, you can explore their social links and easily reach out for potential bookings. Discover the sound, experience the energy, and join the journey of **MISSIONED SOULS**.
 
@@ -210,7 +222,7 @@ To validate the code, I used W3C validation sevice (see tools).
 
 ### HTML
 
-**index.html errors and clearance**
+## index.html errors and clearance
 
 Initially, `index.html` presented a validation error.
 
@@ -230,7 +242,7 @@ This image confirms that `index.html` now passes W3C validation without any erro
     ![Index.html - Validation Cleared](https://res.cloudinary.com/dvsifzmes/image/upload/index_cleared_es7lcd.png)
     * *The validation report showing a clean bill of health for `index.html`*
 
-**media.html errors and clearance**
+## media.html errors and clearance
 
 Initially, `media.html` presented a significant number of validation errors. These issues primarily stemmed from incorrect attribute formatting within the <video> tags and invalid type values in the <source> tags. This formatting was brought on by using a different HTML formatter before using Beautify again.
 
@@ -368,12 +380,12 @@ This provides immediate clarity on the link's destination and content, benefitin
 ### Example Before & After
 
 **Before:**
-## HTML
+### HTML
 <a href="https://www.youtube.com/watch?v=QWPZC6uk3hM" class="btn btn-primary">More</a>
 
 **After:**
-## HTML
-<a href="https://www.youtube.com/watch?v=QWPZC6uk3hM" class="btn btn-primary">Watch "Bad Medicine" on YouTube</a>
+#### HTML
+<a href="https://www.youtube.com/watch?v=QWPZC6uk3hM" class="btn btn-primary" target="_blank">Watch "Bad Medicine" on YouTube</a>
 
 ## Benefits of the Fix
 **Enhanced accessibility** – Screen readers now convey meaningful link destinations.  
@@ -384,3 +396,123 @@ By implementing these changes, the website aligns better with best practices for
 
 ![Lighthouse gallery.html](https://res.cloudinary.com/dvsifzmes/image/upload/lighthouse_gallery_lkd8su.png)
 
+## Manual Testing
+
+| Feature                          | Expect                                                                            | Action                                                                               | Result                                                                                     |
+| -------------------------------- | --------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------ |
+| Carousel                         | Carousel should change images when clicking the arrows                            | Clicking the left or right arrow keys in the carousel on the games page              | Image is being changed                                                                     |
+| Video player           | Video should play when play button is clicked                                        | Click on play        | Video plays                                      |
+| Video player | Sound plays after unmuting video while its playing                                    | Click speaker icon to unmute | Sound plays along when the video is playing |
+| Video player | Clicking button opens respective video on YouTube                                    | Click Watch "SONG NAME" on YouTube button | Video opens, in new tab, on the bands YouTube channel |
+| Video player | Video is downloaded when user clicks download                                   | Click 3 dots icon in bottom right corner to bring up a menu to allow video to be downloaded locally | Video downloads |
+| Mail link in footer              | Clicking the email link in the footer should open the users preferred mail client | On any page, use navigation link for socials in navbar to be directed to the email icon in the footer and click the icon                           | The mail client is opened                                                                  |
+| Social links                     | Clicking the any of social links should open their respectove social media pages             | On any page, use navigation link in navbar to be directed to the social links in the footer and click the respective social media icon                          | Respective social media for band is opened in a new tab                                                           |
+
+## Browser Testing
+
+**Layout:** Make sure the layout looks the same across all browsers
+
+**Functionality:** All links and navigation workes as intended
+
+| Browser | Layout               | Functionality |
+| ------- | -------------------- | ------------- |
+| Chrome  | ✔️                   | ✔️            |
+| Firefox | ✔️                   | ✔️            |
+| Edge    | ✔️                   | ✔️            |
+| Safari  | No access to browser | -             |
+
+## Bugs
+
+**Body height in relation to navbar**
+
+- When creating the main content of the body, I forgot to take into consideration the _fixed_ position of the navbar. I used the in-browser developers tool to determine the height of the navbar (_89px_) and then applied it to the body CSS code
+
+_Problem_
+
+![Problem in browser](https://res.cloudinary.com/dvsifzmes/image/upload/Forgot_fixed_height_of_navbar_paijtd.png)
+
+![Problem in CSS code](https://res.cloudinary.com/dvsifzmes/image/upload/Missing_padding_jpkklb.png)
+
+_Solution_
+
+![Fixed in browser](https://res.cloudinary.com/dvsifzmes/image/upload/Body_in_line_with_bottom_of_navbar_m1twvx.png)
+
+![Fixed in CSS code](https://res.cloudinary.com/dvsifzmes/image/upload/Padding_added_rjht6g.png)
+
+**Rendered wrong size logo**
+
+- When I added the image for the logo to the code of the navbar, I initially used the wron image thus making the image appear a whole lot larger than the dimentions of the displayed navbar' I then added the image I intended to use to the code and had a correctly displayed logo. Going forward in future projects/builds i need a clearer naming convention for images so i can identify the correct image just by the _Filename_
+
+_Problem_
+
+![Rendered in browser](https://res.cloudinary.com/dvsifzmes/image/upload/2048x2048_rendered_size_m1piqf.png)
+
+![Problem in CSS code](https://res.cloudinary.com/dvsifzmes/image/upload/Wrong_sized_logo_p2zejv.png)
+
+_Solution_
+
+![Fixed logo in browser](https://res.cloudinary.com/dvsifzmes/image/upload/Fixed_logo_in_navbar_dyyuxv.png)
+
+![Fixed logo in CSS code](https://res.cloudinary.com/dvsifzmes/image/upload/fixed_logo_xp9gqb.png)
+
+**Rendered wrong size logo**
+
+- When I was testing my project using the _Lighthouse_ tool on the `media.html` page, it brought to my attention a lot of _duplicate attribute_ errors in the code. Even though the code did't affect the display output of the page, it flagged multiple attribute errors in the **W3C HTML Validator**. This was due to using the [Prettier - Code formatter](https://open-vsx.org/vscode/item?itemName=esbenp.prettier-vscode) tool in VS Code. I manually went through the whole body correcting each line of the code, seperating each attribute to a separate line. After this change, the validator showed no errors.
+
+_Problem_
+
+- [See for images of problem](#media.html-errors-and-clearance)
+
+![Problem in CSS code](https://res.cloudinary.com/dvsifzmes/image/upload/Prettier_added_spacing_dpkvpw.png)
+
+_Solution_
+
+![Errors gone](https://res.cloudinary.com/dvsifzmes/image/upload/media_cleared_pqt5tt.png)
+
+![Fixed spacing and line breaks in HTML code](https://res.cloudinary.com/dvsifzmes/image/upload/Spacing_corrected_aevgxx.png)
+
+---
+
+## Deployment
+
+- While working on building the `index.html`, `media.html`, and `gallery.html` I consistantly committed and pushed the changes I made to the code to my GitHub repository. I decided to deploy early since it's recommended in the tutorials provided by the Code Institute to compare both the local and the live deployments to discover bugs or other problems early.
+
+* **Prepare Your Project for GitHub:** Add all your project files, commit them with a descriptive message, and then upload them to your GitHub repository.
+
+![Step one: Add, commit and push to GitHub in VS Code](https://res.cloudinary.com/dvsifzmes/image/upload/commit_push_hnwt07.png)
+
+* **Access Repository Settings:** On your GitHub repository page, find and click on the _Settings_ tab.
+
+![Step two: Go to repository site and press on settings.](https://res.cloudinary.com/dvsifzmes/image/upload/settings_tab_repository_e4eckm.png)
+
+* **Navigate to GitHub Pages:** In the left-hand menu of the settings page, click on _Pages_.
+
+![Step three: Push the pages section](https://res.cloudinary.com/dvsifzmes/image/upload/pages_tab_y00t1u.png)
+
+* **Set Up Deployment Source:** Under _Source_, choose the option _Deploy from a branch_" Then, select _main_ (or _master_) from the dropdown menu and click _Save_.
+
+![Step four: Choose source, choose main and save.](https://res.cloudinary.com/dvsifzmes/image/upload/deploy_from_branch_yszy1u.png)
+
+* **Monitor Deployment Progress:** Go to the _Actions_ tab in your repository. Wait for the deployment workflow to finish running. This usually takes a few minutes.
+
+![Step five: Wait for the processing](https://res.cloudinary.com/dvsifzmes/image/upload/pages_deployment_ogwnky.png)
+
+* **Find Your Deployed Site:** Once the _Actions_ workflow is complete, go back to the _<> Code_ tab of your repository. You'll see a link to your newly deployed website.
+
+![Step six: Find the deployed site and press link](https://res.cloudinary.com/dvsifzmes/image/upload/deployment_link_e0ch17.png)
+
+* **Verify Your Website:** Click on the provided link to open your website. Make sure everything looks correct and functions as expected.
+
+![Step seven: Click the link and check that everything works](https://res.cloudinary.com/dvsifzmes/image/upload/deployed_url_wzeinb.png)
+
+---
+
+## Credits
+
+### Media
+
+| Source                                   | Location                    | Type                   | Notes                                                                                                 |
+| ---------------------------------------- | --------------------------- | ---------------------- | ----------------------------------------------------------------------------------------------------- |
+| [MISSIONED SOULS](https://www.facebook.com/missionedsouls/photos_by)      | Photos            | images                 | I used seveal images, including logo, to use on the site. I recieved permission from the family to use images that are publically available on the social media sites                                                 |
+| [Font awesome](https://fontawesome.com/) | Social Media Icons             | Icons                  | Used to insert social media icons.                                                                                 |                                                                           |
+| [Gemini](https://gemini.google.com/)          | ALT descriptions `gallery.html` | Description | I used **Gemini** to help with generating _alt_ descriptions by having cloudinary auto generate tags for the images on the `gallery.html` page |
