@@ -149,7 +149,7 @@ The website consists of three pages: Home, Media, and Gallery, The Home page con
 
 ![colour-palette](https://res.cloudinary.com/dvsifzmes/image/upload/Missioned_Souls_Colour_Pallette_mkgzei.png)
 
-The above colour palette, inspired by the photosbands logo featured on the website, is used throughout the project.
+The above colour palette, inspired by the photos of the bands logo featured on the website, is used throughout the project.
 
 Midnight Green (#26525e)
 
