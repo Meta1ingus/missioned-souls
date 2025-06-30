@@ -9,7 +9,7 @@ MISSIONED SOULS is small website created with the purpose of making others aware
 ## Table of Contents
 - [Introduction](#introduction)
 
-- [UX](#user-experience)
+- [User Experience](#user-experience)
 
   - [Project goals](#project-goals)
 
