@@ -1,151 +1,186 @@
-  # Missioned Souls
+<div align="center">
+
+# Missioned Souls
 
 ![Multi-Device Responsive Mockup](https://res.cloudinary.com/dvsifzmes/image/upload/multi_device_responsive_mockup_rxzhpb.png)
 
 [Link to project](https://meta1ingus.github.io/missioned-souls/)
 
+</div>
+
+<div align="center">
+
 MISSIONED SOULS is small website created with the purpose of making others aware of sucha a talented family band. The site gives a brief description of the band and showcases a select few videos of their cover songs and a selection of photos of the band.  The site consists of 3 pages to meet the owner and user goals of which are described in the User Experience section.
 
+</div>
+
+<div align="center">
+
 ## Table of Contents
+
+</div>
+
 - [Introduction](#introduction)
-
 - [User Experience](#user-experience)
-
-  - [Project goals](#project-goals)
-
-  - [Site owner's goals](#site-owners-goals)
-
-  - [External user goals](#external-user-goals)
-
-  - [User stories](#user-stories)
-
-  - [Wireframes](#wireframes)
-
-  - [Design choices](#design-choices)
-
-  - [Features](#features)
-
-  - [Key-features to meet the goals](#key-features-to-meet-the-goals)
-
+    - [Project goals](#project-goals)
+    - [Site owner's goals](#site-owners-goals)
+    - [External user goals](#external-user-goals)
+    - [User stories](#user-stories)
+    - [Wireframes](#wireframes)
+    - [Design choices](#design-choices)
+    - [Features](#features)
+    - [Key-features to meet the goals](#key-features-to-meet-the-goals)
 - [Technologies](#technologies)
-
-  - [Tools](#tools)
-
+    - [Tools](#tools)
 - [Testing](#testing)
-
-  - [Validation](#validation)
-
-  - [Lighthouse](#lighthouse)
-
-  - [Manual Testing](#manual-testing)
-
-  - [Browser Testing](#browser-testing)
-
-  - [Bugs](#bugs)
-
+    - [Validation](#validation)
+    - [Lighthouse](#lighthouse)
+    - [Manual Testing](#manual-testing)
+    - [Browser Testing](#browser-testing)
+    - [Bugs](#bugs)
 - [Deployment](#deployment)
-
 - [Credits](#credits)
+    - [Media](#media)
 
-  - [Media](#media)
+<div align="center">
 
 ## Introduction
+
+</div>
 
 Welcome to **MISSIONED SOULS**, an unofficial website dedicated to bringing you closer to the band. Here, you’ll find a collection of videos showcasing their performances, allowing you to hear and see the band in action. Whether you’re a fan looking to connect or an event organizer searching for talent, you can explore their social links and easily reach out for potential bookings. Discover the sound, experience the energy, and join the journey of **MISSIONED SOULS**.
 
 This website provides information to potential clients. A visitor will be able to watch a few videos, view a selection high quality pictures, and be directed to MISSIONED SOULS' contact information and social media links.
 
+<div align="center">
+
 ## User Experience
 
-### User Stories 
+### User Stories
+
+</div>
 
 - As a First-Time Visitor, I need easy navigation and a user-friendly design, including a responsive layout for my device, so I can find information quickly and efficiently without frustration.
-
 - As a fan of music, I want to know about the band, I want to see high-quality images and see a selection of videos of the band performing.
-
 - As a fan of music, I want to be able to see/hear some of the bands music on the website, so I can decide whether to engage with their socials and potentially book them for an event.
-
 - As a potential customer, I want to see essential information such as location, contact details, and social links clearly and concisely, so I can easily get in touch with the band.
+
+<div align="center">
 
 ### Project goals
 
+</div>
+
 The goal of MISSIONED SOULS is to create a website to help bring awareness to the band. By providing a page of videos for the user to view to see the band performing, users can then go onto the band's social links and decide if they want to go on to contact the band for possible events.
+
+<div align="center">
 
 ### Site owner's goals
 
-- Increase awarenwss of the band
+</div>
 
+- Increase awarenwss of the band
 - Easy administration
+
+<div align="center">
 
 ### External user goals
 
+</div>
+
 - Information and the socials for the band
-
 - See the bands performances
-
 - See a selection of pictures
+
+<div align="center">
 
 ### User stories
 
 #### As a site owner
 
+</div>
+
 - I want to increase band awareness
+
+<div align="center">
 
 #### As a user
 
+</div>
+
 - First-Time Visitor: Needs intuitive navigation, a user-friendly design, and a responsive layout for quick, frustration-free access to information
-
 - Music Fan (Band Info): Wants high-quality images and performance videos to learn about the band
-
 - Music Fan (Listening Experience): Hopes to stream the band’s music to decide on engagement
-
 - Potential Customer: Requires clear contact details, location and social links for easy communication with the band
+
+<div align="center">
 
 ### Features
 
 #### Key-features to meet the goals
 
+</div>
+
 - To ensure a responsive design and user-friendly interface, by applying a mobile-first approach
-
 - There are a section on the home page contatining information about the band
-
 - There is an easily accesible navigation bar in the browser and a hamburger menu for phone and small screens in the upper right corner for easy access and recognition for the user on all pages.
-
 - There is a second page (_Media_) where users can watch several performances of the band
-
 - There is a third page (_Gallery_) to access a selection of photos of the band
-
 - The Social Media links and contact information (_e-mail_) is placed in the footer
+
+<div align="center">
 
 ### Wireframes
 
 #### Mobile
 
+</div>
+
 * [Home](https://res.cloudinary.com/dvsifzmes/image/upload/Mobile_Home_owf4dp.png)
 * [Media](https://res.cloudinary.com/dvsifzmes/image/upload/Mobile_Media_y7t1db.png)
 * [Gallery](https://res.cloudinary.com/dvsifzmes/image/upload/Mobile_Gallery_repjbu.png)
 
+<div align="center">
+
 #### Tablet
+
+</div>
 
 * [Home](https://res.cloudinary.com/dvsifzmes/image/upload/Tablet_Home_gqfzxs.png)
 * [Media](https://res.cloudinary.com/dvsifzmes/image/upload/Tablet_Media_xaifir)
 * [Gallery](https://res.cloudinary.com/dvsifzmes/image/upload/Tablet_Gallery_rhs9tu)
 
+<div align="center">
+
 #### Desktop
+
+</div>
 
 * [Home](https://res.cloudinary.com/dvsifzmes/image/upload/Desktop_Home_vxi1bc)
 * [Media](https://res.cloudinary.com/dvsifzmes/image/upload/Desktop_Media_pzkjhe)
 * [Gallery](https://res.cloudinary.com/dvsifzmes/image/upload/Desktop_Gallery_uxy6cm)
 
+<div align="center">
+
 #### Design choices
+
+</div>
 
 The design style chosen for the project is in a modern, minimalist aesthetic to alingn with the band logo
 
+<div align="center">
+
 ### Website Structure
+
+</div>
 
 The website consists of three pages: Home, Media, and Gallery, The Home page contains the bulk of the content with 2 different sections: 5 Images in an auto rotating carousel, and a Bio section. The navbar is in a fixed position, so that it's visable to allow access to navigation at all times. The footer is static on all pages with easy acces from the provided link in the navbar.
 
-### Colour Scheme 
+<div align="center">
+
+### Colour Scheme
+
+</div>
 
 ![colour-palette](https://res.cloudinary.com/dvsifzmes/image/upload/Missioned_Souls_Colour_Pallette_mkgzei.png)
 
@@ -167,27 +202,42 @@ Gunmetal (#18343e)
 
 Used for the bio section text and as the fallback background colour for the navbar
 
-### Typography 
+<div align="center">
+
+### Typography
+
+</div>
 
 - 'Fredoka' sans-serif Google font is applied as the main font for the entire body of the website and used for the text in the navigation links
 - 'Jacques Francois Shadow' sans-serif Google font is used for the headings throguhout the website.
 - Font Awesome icons have been used for social media links in the footer.
 
+<div align="center">
+
 ### Images
+
+</div>
 
 To optimize the site, I compressed local images used with the tool TinyPNG (see tools) Images for the (_Gallery_) page were uploaded to Cloudinary (see tools) rather than hosted locally. This decision was made to ensure faster loading times, responsive delivery across all devices, and streamlined image management, thanks to Cloudinary's powerful optimisation capabilities and global content delivery network.
 
 ---
 
+<div align="center">
+
 ## Technologies
+
+</div>
 
 For this project, GitHub was used to host the repository, and VS Code served as the integrated development environment (IDE). To ensure the site is fully responsive and to manage development time effectively, the Bootstrap framework was utilised.
 
 - This project includes HTML and CSS language
-
 - I also installed the extension Prettier - formatter to format the code
 
+<div align="center">
+
 ### Tools
+
+</div>
 
 Here is a breakdown of the tools, resources, and learning materials that were instrumental in this project:
 
@@ -212,35 +262,46 @@ Here is a breakdown of the tools, resources, and learning materials that were in
 
 ---
 
+<div align="center">
+
 ## Testing
 
 ### Validation
 
+</div>
+
 To validate the code, I used W3C validation sevice (see tools).
+
+<div align="center">
 
 ## Lighthouse
 
 ### HTML
 
-## index.html errors and clearance
 
+## index.html errors and clearance
+</div>
 Initially, `index.html` presented a validation error.
 
 ### Initial Errors:
 This image highlights the error identified in the initial validation pass of `index.html`.
 
 * **Error Screenshot 1: Structure Issue**
-    ![Index.html - Initial Errors Part 1](https://res.cloudinary.com/dvsifzmes/image/upload/index_warning_qc7uj3.png)
-    * *This image shows the error related to missing headings in sections.*
+        ![Index.html - Initial Errors Part 1](https://res.cloudinary.com/dvsifzmes/image/upload/index_warning_qc7uj3.png)
+        * *This image shows the error related to missing headings in sections.*
 
 After careful review and adjustments, all identified issues were successfully resolved. The validation report now shows a clean status.
 
+<div align="center">
+
 ### Cleared Status:
+
+</div>
 This image confirms that `index.html` now passes W3C validation without any errors or warnings.
 
 * **Cleared Screenshot 1:**
-    ![Index.html - Validation Cleared](https://res.cloudinary.com/dvsifzmes/image/upload/index_cleared_es7lcd.png)
-    * *The validation report showing a clean bill of health for `index.html`*
+        ![Index.html - Validation Cleared](https://res.cloudinary.com/dvsifzmes/image/upload/index_cleared_es7lcd.png)
+        * *The validation report showing a clean bill of health for `index.html`*
 
 ## media.html errors and clearance
 
@@ -250,56 +311,64 @@ Initially, `media.html` presented a significant number of validation errors. The
 These 8 screenshots detail the various errors identified in the initial validation pass of `media.html`.
 
 * **Error Screenshot 1: Duplicate Attribute**
-    ![Media.html - Initial Errors Part 1](https://res.cloudinary.com/dvsifzmes/image/upload/media_error1_kssrqg.png)
-    * *This image highlights the first instance of a duplicated attribute (spacing) within a video tag.*
+        ![Media.html - Initial Errors Part 1](https://res.cloudinary.com/dvsifzmes/image/upload/media_error1_kssrqg.png)
+        * *This image highlights the first instance of a duplicated attribute (spacing) within a video tag.*
 
 * **Error Screenshot 2: Duplicate Attribute (cont.)**
-    ![Media.html - Initial Errors Part 2](https://res.cloudinary.com/dvsifzmes/image/upload/media_error2_hb6f1i.png)
-    * *Another instance of the attribute (spacing) appearing multiple times in a video element.*
+        ![Media.html - Initial Errors Part 2](https://res.cloudinary.com/dvsifzmes/image/upload/media_error2_hb6f1i.png)
+        * *Another instance of the attribute (spacing) appearing multiple times in a video element.*
 
 * **Error Screenshot 3: Duplicate Attribute (cont.)**
-    ![Media.html - Initial Errors Part 3](https://res.cloudinary.com/dvsifzmes/image/upload/media_error3_gzntjj.png)
-    * *Another instance of the attribute (spacing) appearing multiple times in a video element and an error where the 'type' attribute for the WebM and MP4 sources had an invalid value (e.g., a trailing semicolon).*
+        ![Media.html - Initial Errors Part 3](https://res.cloudinary.com/dvsifzmes/image/upload/media_error3_gzntjj.png)
+        * *Another instance of the attribute (spacing) appearing multiple times in a video element and an error where the 'type' attribute for the WebM and MP4 sources had an invalid value (e.g., a trailing semicolon).*
 
 * **Error Screenshot 4: Duplicate Attribute (cont.)**
-    ![Media.html - Initial Errors Part 4](https://res.cloudinary.com/dvsifzmes/image/upload/media_error4_jusdmk.png)
-    * *Another instance of the attribute (spacing) appearing multiple times in a video element.*
+        ![Media.html - Initial Errors Part 4](https://res.cloudinary.com/dvsifzmes/image/upload/media_error4_jusdmk.png)
+        * *Another instance of the attribute (spacing) appearing multiple times in a video element.*
 
 * **Error Screenshot 5: Duplicate Attribute (cont.)**
-    ![Media.html - Initial Errors Part 5](https://res.cloudinary.com/dvsifzmes/image/upload/media_error5_r0rwse.png)
-    * *Another instance of the attribute (spacing) appearing multiple times in a video element.*
+        ![Media.html - Initial Errors Part 5](https://res.cloudinary.com/dvsifzmes/image/upload/media_error5_r0rwse.png)
+        * *Another instance of the attribute (spacing) appearing multiple times in a video element.*
 
 * **Error Screenshot 6: Duplicate Attribute (cont.)**
-    ![Media.html - Initial Errors Part 6](https://res.cloudinary.com/dvsifzmes/image/upload/media_error6_qnhxk0.png)
-    * *Another instance of the attribute (spacing) appearing multiple times in a video element and an error where the 'type' attribute for the WebM and MP4 sources had an invalid value (e.g., a trailing semicolon).*
+        ![Media.html - Initial Errors Part 6](https://res.cloudinary.com/dvsifzmes/image/upload/media_error6_qnhxk0.png)
+        * *Another instance of the attribute (spacing) appearing multiple times in a video element and an error where the 'type' attribute for the WebM and MP4 sources had an invalid value (e.g., a trailing semicolon).*
 
 * **Error Screenshot 7: Duplicate Attribute (cont.)**
-    ![Media.html - Initial Errors Part 7](https://res.cloudinary.com/dvsifzmes/image/upload/media_error7_kp25nh.png)
-    * *Another instance of the attribute (spacing) appearing multiple times in a video element.*
+        ![Media.html - Initial Errors Part 7](https://res.cloudinary.com/dvsifzmes/image/upload/media_error7_kp25nh.png)
+        * *Another instance of the attribute (spacing) appearing multiple times in a video element.*
 
 * **Error Screenshot 8: Duplicate Attribute (cont.)**
-    ![Media.html - Initial Errors Part 8](https://res.cloudinary.com/dvsifzmes/image/upload/media_error8_laxbfc.png)
-    * *Another instance of the attribute (spacing) appearing multiple times in a video element and an error where the 'type' attribute for the WebM and MP4 sources had an invalid value (e.g., a trailing semicolon).*
+        ![Media.html - Initial Errors Part 8](https://res.cloudinary.com/dvsifzmes/image/upload/media_error8_laxbfc.png)
+        * *Another instance of the attribute (spacing) appearing multiple times in a video element and an error where the 'type' attribute for the WebM and MP4 sources had an invalid value (e.g., a trailing semicolon).*
 
 After extensive review and adjustments (specifically addressing duplicate and malformed attributes, and correcting source type values by removing trailing semicolons), all identified issues were successfully resolved. The validation report now shows a clean status.
 
+<div align="center">
+
 ### Cleared Status:
+
+</div>
 This image confirms that `media.html` now passes W3C validation without any errors or warnings.
 
 * **Cleared Screenshot 1:**
-    ![Media.html - Validation Cleared](https://res.cloudinary.com/dvsifzmes/image/upload/media_cleared_pqt5tt.png)
-    * *The validation report showing a clean bill of health for `media.html`*
+        ![Media.html - Validation Cleared](https://res.cloudinary.com/dvsifzmes/image/upload/media_cleared_pqt5tt.png)
+        * *The validation report showing a clean bill of health for `media.html`*
 
+<div align="center">
 **gallery.html errors and clearance**
-
+</div>
 Upon initial validation, `gallery.html` was found to have no errors or warnings, indicating a clean and compliant HTML structure from the outset.
+<div align="center">
 
 ### Cleared Status:
+
+</div>
 This screenshot confirms that `gallery.html` passes W3C validation without any issues.
 
 * **Cleared Screenshot 1:**
-    ![Gallery.html - Validation Cleared](https://res.cloudinary.com/dvsifzmes/image/upload/gallery_cleared_ajn7vb.png)
-    * *The validation report showing a clean bill of health for `gallery.html`*
+        ![Gallery.html - Validation Cleared](https://res.cloudinary.com/dvsifzmes/image/upload/gallery_cleared_ajn7vb.png)
+        * *The validation report showing a clean bill of health for `gallery.html`*
 
 Upon initial validation, `styles.css` was found to have no errors or warnings, indicating a clean and compliant CSS structure from the outset.
 
@@ -307,10 +376,14 @@ Upon initial validation, `styles.css` was found to have no errors or warnings, i
 This screenshot confirms that `styles.css` passes W3C validation without any issues.
 
 * **Cleared Screenshot 1:**
-    ![Styles.css - Validation Cleared](https://res.cloudinary.com/dvsifzmes/image/upload/CSS_cleared_kadpuw.png)
-    * *The validation report showing a clean bill of health for `styles.css`*
+        ![Styles.css - Validation Cleared](https://res.cloudinary.com/dvsifzmes/image/upload/CSS_cleared_kadpuw.png)
+        * *The validation report showing a clean bill of health for `styles.css`*
+
+<div align="center">
 
 ### Deprecated API Warning
+
+</div>
 
 ![81 Best Practices for both index.html and media.html](https://res.cloudinary.com/dvsifzmes/image/upload/best_practices_uknfel.png)  
 
@@ -334,7 +407,11 @@ I ensure that:
 
 This documentation provides **clarity** on the nature of the warning and reinforces my commitment to **maintaining high coding standards**.
 
-## Third-Party Cookies & Cloudinary 
+<div align="center">
+
+## Third-Party Cookies & Cloudinary
+
+</div>
 
 ![59 Best Practices in media.html](https://res.cloudinary.com/dvsifzmes/image/upload/gallery_best_practices_gpscvm.png)
 
@@ -361,7 +438,11 @@ For transparency, users can manage their cookie preferences via browser settings
 
 ![Lighthouse media.html](https://res.cloudinary.com/dvsifzmes/image/upload/lighthouse_media_z3aqsv.png)
 
+<div align="center">
+
 ## Accessibility & SEO Improvement: Descriptive Link Text for Buttons
+
+</div>
 
 ![Lighthouse media.html SEO text](https://res.cloudinary.com/dvsifzmes/image/upload/media_SEO_text_b0hgjl.png)
 
@@ -396,7 +477,11 @@ By implementing these changes, the website aligns better with best practices for
 
 ![Lighthouse gallery.html](https://res.cloudinary.com/dvsifzmes/image/upload/lighthouse_gallery_lkd8su.png)
 
+<div align="center">
+
 ## Manual Testing
+
+</div>
 
 | Feature                          | Expect                                                                            | Action                                                                               | Result                                                                                     |
 | -------------------------------- | --------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------ |
@@ -408,7 +493,11 @@ By implementing these changes, the website aligns better with best practices for
 | Mail link in footer              | Clicking the email link in the footer should open the users preferred mail client | On any page, use navigation link for socials in navbar to be directed to the email icon in the footer and click the icon                           | The mail client is opened                                                                  |
 | Social links                     | Clicking the any of social links should open their respectove social media pages             | On any page, use navigation link in navbar to be directed to the social links in the footer and click the respective social media icon                          | Respective social media for band is opened in a new tab                                                           |
 
+<div align="center">
+
 ## Browser Testing
+
+</div>
 
 **Layout:** Make sure the layout looks the same across all browsers
 
@@ -421,7 +510,11 @@ By implementing these changes, the website aligns better with best practices for
 | Edge    | ✔️                   | ✔️            |
 | Safari  | No access to browser | -             |
 
+<div align="center">
+
 ## Bugs
+
+</div>
 
 **Body height in relation to navbar**
 
@@ -473,7 +566,11 @@ _Solution_
 
 ---
 
+<div align="center">
+
 ## Deployment
+
+</div>
 
 - While working on building the `index.html`, `media.html`, and `gallery.html` I consistantly committed and pushed the changes I made to the code to my GitHub repository. I decided to deploy early since it's recommended in the tutorials provided by the Code Institute to compare both the local and the live deployments to discover bugs or other problems early.
 
@@ -507,9 +604,13 @@ _Solution_
 
 ---
 
+<div align="center">
+
 ## Credits
 
 ### Media
+
+</div>
 
 | Source                                   | Location                    | Type                   | Notes                                                                                                 |
 | ---------------------------------------- | --------------------------- | ---------------------- | ----------------------------------------------------------------------------------------------------- |
@@ -517,3 +618,4 @@ _Solution_
 | [Videos](https://www.youtube.com/@MissionedSouls) | Videos             | video                  | I used four videos to use as hard copies on the site. I recieved permission from the family to download videos locally using YouTube Premium to the convert into web-friendly MP4 and WebM formats.                                                                               |
 | [Font awesome](https://fontawesome.com/) | Social Media Icons             | Icons                  | Used to insert social media icons.                                                                                 |                                                                           |
 | [Gemini](https://gemini.google.com/)          | ALT descriptions `gallery.html` | Description | I used **Gemini** to help with generating _alt_ descriptions by having cloudinary auto generate tags for the images on the `gallery.html` page. |
+
