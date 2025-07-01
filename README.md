@@ -140,7 +140,7 @@ This project uses targeted screenshots to visually confirm that the user stories
 
 #### 🧭 First-Time Visitor
 - Clear, user-friendly homepage layout with consistent navigation across devices  
-  ![Homepage (Desktop)](assets/screenshots/01-homepage-desktop.png)
+  ![Homepage (Desktop)](assets/screenshots/01-index-desktop-full.png)
 
 #### 📝 Music Fan – About the Band
 - Dedicated bio section introducing the group and their story  
