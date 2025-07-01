@@ -137,28 +137,52 @@ The goal of MISSIONED SOULS is to create a website to help bring awareness to th
 This project uses targeted screenshots to visually confirm that the user stories outlined in the planning phase are met through the site’s structure, responsiveness, and content.
 
 ---
+<div align="center">
 
 #### 🧭 First-Time Visitor
+
+</div>
+
 - Clear, user-friendly homepage layout with consistent navigation across devices  
   ![Homepage (Desktop)](assets/screenshots/01-index-desktop-full.png)
+<div align="center">
 
 #### 📝 Music Fan – About the Band
+
+</div>
+
 - Dedicated bio section introducing the group and their story  
   ![Bio Section](assets/screenshots/02-bio-section.png)
+<div align="center">
 
 #### 🎬 Music Fan – Listening Experience
+
+</div>
+
 - Performance video embedded and fully playable from the Media page  
   ![Video Playback](assets/screenshots/04-video-playing.png)
+<div align="center">
 
 #### 🖼️ Music Fan – Gallery
+
+</div>
+
 - Grid-style layout showcasing high-quality images of the band  
   ![Gallery View](assets/screenshots/05-gallery-full.png)
+<div align="center">
 
 #### 📬 Potential Customer
+
+</div>
+
 - Contact details and social media links placed accessibly in the footer  
   ![Contact & Social Links](assets/screenshots/03-footer-socials.png)
+<div align="center">
 
 #### 📱 Responsive Design Preview
+
+</div>
+
 - Mobile dropdown menu activates and displays navigation links clearly  
   ![Mobile Menu Opened](assets/screenshots/06-mobile-dropdown-open.png)
 
