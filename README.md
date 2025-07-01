@@ -30,6 +30,7 @@ MISSIONED SOULS is small website created with the purpose of making others aware
     - [Design choices](#design-choices)
     - [Features](#features)
     - [Key-features to meet the goals](#key-features-to-meet-the-goals)
+    - [User Story Demonstration](#user-story-demonstration)
 - [Technologies](#technologies)
     - [Tools](#tools)
 - [Testing](#testing)
@@ -127,6 +128,44 @@ The goal of MISSIONED SOULS is to create a website to help bring awareness to th
 - There is a second page (_Media_) where users can watch several performances of the band
 - There is a third page (_Gallery_) to access a selection of photos of the band
 - The Social Media links and contact information (_e-mail_) is placed in the footer
+<div align="center">
+
+### 📸 User Story Demonstration
+
+</div>
+
+This project uses targeted screenshots to visually confirm that the user stories outlined in the planning phase are met through the site’s structure, responsiveness, and content.
+
+---
+
+#### 🧭 First-Time Visitor
+- Clear, user-friendly homepage layout with consistent navigation across devices  
+  ![Homepage (Desktop)](assets/screenshots/01-homepage-desktop.png)
+
+#### 📝 Music Fan – About the Band
+- Dedicated bio section introducing the group and their story  
+  ![Bio Section](assets/screenshots/02-bio-section.png)
+
+#### 🎬 Music Fan – Listening Experience
+- Performance video embedded and fully playable from the Media page  
+  ![Video Playback](assets/screenshots/04-video-playing.png)
+
+#### 🖼️ Music Fan – Gallery
+- Grid-style layout showcasing high-quality images of the band  
+  ![Gallery View](assets/screenshots/05-gallery-full.png)
+
+#### 📬 Potential Customer
+- Contact details and social media links placed accessibly in the footer  
+  ![Contact & Social Links](assets/screenshots/03-footer-socials.png)
+
+#### 📱 Responsive Design Preview
+- Mobile dropdown menu activates and displays navigation links clearly  
+  ![Mobile Menu Opened](assets/screenshots/06-mobile-dropdown-open.png)
+
+
+---
+
+These screenshots were captured with [Playwright](https://playwright.dev/) using scripted user flows. They validate both functionality and responsiveness while reflecting the intent behind each user story.
 
 <div align="center">
 
@@ -259,6 +298,8 @@ Here is a breakdown of the tools, resources, and learning materials that were in
 | [Cloudflare](https://www.cloudflare.com/) | Video Hosting | A dedicated service that optimises video hosting and delivery. It handles storage, encoding, and global content distribution to ensure fast loading and smooth, adaptive playback for viewers worldwide. |
 | [Cloudinary](https://cloudinary.com/) | Image Hosting | A comprehensive cloud-based platform for image management. It enables automated optimisation, dynamic transformations, and rapid delivery of photos through a global CDN, ensuring optimal performance and responsiveness across all devices. |
 | [Autoprefixer CSS online](https://autoprefixer.github.io/) | Development Utility | A post-processor tool that automatically adds, and removes, vendor prefixes to the CSS rules. This ensures broader cross-browser compatibility for modern CSS features without requiring manual upkeep of prefixes. |
+| [Playwright](https://playwright.dev/) | Testing Utility | A Node.js-based tool used to automate browser actions.|
+
 
 ---
 
@@ -618,4 +659,4 @@ _Solution_
 | [Videos](https://www.youtube.com/@MissionedSouls) | Videos             | video                  | I used four videos to use as hard copies on the site. I recieved permission from the family to download videos locally using YouTube Premium to the convert into web-friendly MP4 and WebM formats.                                                                               |
 | [Font awesome](https://fontawesome.com/) | Social Media Icons             | Icons                  | Used to insert social media icons.                                                                                 |                                                                           |
 | [Gemini](https://gemini.google.com/)          | ALT descriptions `gallery.html` | Description | I used **Gemini** to help with generating _alt_ descriptions by having cloudinary auto generate tags for the images on the `gallery.html` page. |
-
+| [Playwright](https://playwright.dev/) | Site-wide | Automated screenshots | I used **Playwright** to simulate realistic user interactions and capture screenshots that demonstrate how the site satisfies key user stories across desktop and mobile views. |
