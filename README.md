@@ -130,7 +130,7 @@ The goal of MISSIONED SOULS is to create a website to help bring awareness to th
 - The Social Media links and contact information (_e-mail_) is placed in the footer
 <div align="center">
 
-### 📸 User Story Demonstration
+### User Story Demonstration
 
 </div>
 
